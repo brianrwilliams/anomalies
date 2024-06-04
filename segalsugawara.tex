@@ -1,0 +1,1127 @@
+\documentclass[11pt]{amsart}
+
+\usepackage{macros-master,amsaddr,physics}
+\usepackage{mathbbol}
+
+\addbibresource{refs}
+
+\renewcommand{\div}{\del_{\Omega}}
+\renewcommand{\PV}{\mathrm{PV}}
+\renewcommand{\op}{\operatorname}
+
+\newcommand{\sfa}{\mathsf{a}}
+\newcommand{\sfb}{\mathsf{b}}
+\newcommand{\sfc}{\mathsf{c}}
+\newcommand{\bfa}{\mathbf{a}}
+\newcommand{\bfc}{\mathbf{c}}
+\newcommand{\bfk}{\mathbf{k}}
+
+\newcommand{\fields}{\cC}
+\newcommand{\Vir}{\sV\op{ir}}
+\newcommand{\vir}{\lie{vir}}
+\setcounter{tocdepth}{1}
+
+%\linespread{1.2} %for editing
+%\usepackage{mathpazo}
+
+
+\begin{document}
+
+\title{A higher dimensional Segal--Sugawara construction}
+\author{Brian R. Williams}
+\thanks{Boston University, Department of Mathematics and Statistics}
+\email{bwill22@bu.edu}
+\maketitle
+
+Let $X$ be a three-dimensional complex manifold. Denote by $\Omega^1_X$ the sheaf of holomorphic one-forms and by $\del \cO_X$ the sheaf of exact holomorphic one-forms.
+
+\section{Virasoro factorization algebras}
+
+Let $X$ be a complex manifold of dimension $n$.
+The sheaf of holomorphic vector fields has the natural structure of a sheaf of Lie algebras with bracket the Lie bracket of vector fields.
+Since this bracket involves only holomorphic differential operators, it extends to a bracket on the Dolbeault complex $\Omega^{0,\bu}(X,\T_X)$ of the holomorphic tangent bundle.
+This bracket endows the Dolbeault complex $\Omega^{0,\bu}(X, \T_X)$ with coefficients in the holomorphic tangent bundle with the structure of a dg Lie algebra where the differential is $\dbar$.
+
+As defined in \cite{CG2}, a local dg Lie algebra is a $\Z$-graded complex of vector bundles whose sheaf of sections is equipped with the structure of a dg Lie algebra.
+Let $\cT_X$ be the local dg Lie algebra whose underlying complex of vector bundles is
+\beqn
+\Omega^{0,\bu}(X, \T_X) .
+\eeqn
+The differential is the $\dbar$-operator associated to the holomorphic bundle $\T_X$.
+The bracket is the Lie bracket of holomorphic vector fields extended to the Dolbeault complex as described above.
+By Dolbeault's theorem, for $U \subset X$ a Stein open set there is a quasi-isomorphism $\cT_X(U) \simeq \op{Vect}^{hol}(U)$, the Lie algebra of holomorphic vector fields on~$U$.
+When $X = \C^n$ we denote $\cT_X = \cT$ for simplicity.
+
+%There is also the following relationship between $\cT$ and formal vector fields, which will be used subsequently.
+%Let \(E \to M\) denote a $\Z$-graded vector bundle on \(M\).
+%We consider the pro vector bundle of $\infty$-jets which we will denote by $j^\infty E$, see \cite{Anderson} or \cite[\S 5.6]{CostelloBook} for instance.
+%The sheaf of smooth sections of this pro vector bundle carries the natural structure of a $D_M$-module.
+%If $\cL = \Gamma(L)$ is a local $L_\infty$ algebra then $j^\infty L$ is a bundle of $L_\infty$ algebras.
+%
+%\begin{prop}
+%The central charge of the
+%\end{prop}
+%
+%\begin{prop}
+%Let $X$ be a complex manifold of dimension $n$ and $\mathbf{c} \in H^{2n+2}(BU(n))$.
+%Then, there exists a unique factorization algebra $X$ with the property that the restriction of it to any coordinatized open set $U$ is equivalent to the Virasoro factorization algebra $\cV\op{ir}_{\mathbf{c}}$ on $U$.
+%\end{prop}
+%
+%As a consequence, we see that for any such central charge $\mathbf{c} \in H^{2n+2}(BU(n))$ the factorization algebra $\cV \op{ir}_{\mathbf{c}}$ is defined on the entire \textit{site} of complex manifolds of dimension $n$.
+
+In particular, the dg Lie algebra $\cT(\C - \{0\})$ is quasi-isomorphic to holomorphic vector fields on $\C^\times$.
+Replacing $\C^\times$ by the formal punctured disk gives the Witt algebra $\Vect(D^\times) = \C((z)) \del_z$ whose unique nontrivial central extension is the Virasoro Lie algebra.
+
+For an example of a complex manifold which is not Stein consider $X = \C^n - \{0\}$.
+There is an embedding of dg Lie algebras
+\beqn
+\Vect^{hol}(\C^n - \{0\}) \hookrightarrow \cT(\C^n - \{0\})
+\eeqn
+which is no longer a quasi-isomorphism.
+This map does define an isomorphism in $H^0$ cohomology, but $\cT(\C^n-\{0\})$ also has cohomology in degree $(n-1)$. 
+In standard coordinates, cochain representatives for this cohomology are given by expressions of the form
+\beqn
+\sum_j \left(\sum_{k_1 \cdots k_n} a^j_{k_1\cdots k_n} L_{\del_{z_1}^{k_1}} \cdots L_{\del_{z_n}^{k_n}} \omega_{BM}\right) \frac{\del}{\del z_j} 
+\eeqn
+Here $a^j_{k_1\cdots k_n}$ are constants and $\omega_{BM} \in \Omega^{0,n-1}(\C^n-\{0\})$ is the Bochner--Martinelli form which is characterized by the formula $\oint_{S^{2n-1}} \omega_{BM} \wedge \d^n z= 1$ with $S^{2n-1}$ the sphere of radius one centered at $0 \in \C^n$.
+
+Here we make the distinction between $\C^n$ and affine space $\A^n$; the latter is the algebraic variety with functions $\C[z_1,\ldots,z_n]$.
+There is an algebraic version of $\cT(\C^n - \{0\})$ with $\C^n - \{0\}$ replaced by punctured $n$-dimensional algebraic affine space $\A^n - \{0\}$.
+Using a dg model for the punctured $n$-space presented in \cite{FHK}, in appendix \ref{appx:A} we construct a dg model for the derived global sections of the tangent bundle over punctured affine space which we will denote by $\lie{witt}(n)$ and refer to as the \defterm{$n$-dimensional Witt algebra}.
+Here is a list of important properties of the dg Lie algebra $\lie{witt}(n)$:
+\begin{itemize}
+\item The underlying cochain complex $\lie{witt}(n)$ is concentrated in cohomological degrees $0,\ldots,n-1$.
+\item Its cohomology is concentrated in degrees $0$ and $n-1$.
+There is an inclusion of the Lie algebra of vector fields on $\A^n$ (thought of as a dg Lie algebra concentrated in degree zero):
+\beqn
+\lie{vect}^{alg}(n) = \C[z_1,\ldots,z_n]\{\del_{z_1},\ldots,\del_{z_n}\} \hookrightarrow 
+\lie{witt}(n)
+\eeqn
+which induces an isomorphism in zeroth cohomology.
+\item In degree $(n-1)$ \brian{finish}
+\end{itemize}
+
+The Virasoro Lie algebra is the unique nontrivial central extension of the Witt algebra $\lie{witt}(1)$.
+This central extension admits an interpretation in terms of the Lie algebra cohomology of  vector fields $\lie{vect}(1)$ on the $1$-disk via the isomorphisms
+\beqn
+H^3(\lie{vect}(1); \C) \cong H^2(\lie{vect}(1); \Omega^1) \cong H^2(\lie{witt}(1);\C) \cong \C .
+\eeqn
+In the last part of this section we will construct an injective map
+\beqn
+H^{2n+1}(\lie{vect}(n);\C) \to H^2(\lie{witt}(n);\C), 
+\eeqn
+thus providing a source of central extensions for the $n$-dimensional Witt algebra.
+Our construction of central extensions uses factorization algebras.
+
+\subsection{Central extensions from local cohomology}
+
+Such central extensions originate from the so-called local cohomology of holomorphic vector fields.
+We briefly recall the definition of local cohomology from \cite{CG2}.
+
+For $E$ a vector bundle on a manifold $M$, define the space of local functionals to be 
+\beqn
+\oloc(E) \define {\rm Dens}_M \otimes_{D_M} {\rm Lag} (E) .
+\eeqn
+Here $\op{Dens}_X$ is the bundle of densities on $M$ and $\op{Lag}(E)$ is the left $D_M$-module of Lagrangians
+\beqn
+\op{Lag} (E) \define \prod_{n > 0} {\rm Hom}_{C^\infty_M} \left(\op{jet} (E) , C^\infty_M\right) .
+\eeqn
+Concretely, a Lagrangian is a $C^\infty_M$-valued functional which only depends on jets of sections of $E$, and a local functional is a Lagrangian defined up to total derivatives.
+Given a Lagrangian $L = L(\phi)$ we will denote its corresponding local functional by~$\int L(\phi)$.
+
+If $E$ is a complex of vector bundles then $\oloc(E)$ is a sheaf of cochain complexes.
+If $\cL = \Gamma(M, L)$ is a local Lie algebra then $\oloc(L[1])$ is equipped with the Chevalley--Eilenberg differential, hence giving a local version of Lie algebra cohomology.
+We denote this sheaf of complexes by $C^\bu_{loc}(\cL)$.
+Note that for every open set $U \subset M$ there is an embedding map
+\beqn\label{eqn:localtocompact}
+C^\bu_{loc}(\cL)(U) \hookrightarrow C^\bu(\cL_c(U)) 
+\eeqn
+where the right hand side is the Chevalley--Eilenberg complex computing the Lie algebra cohomology of compactly supported sections of $L$ on $U$.
+
+The local cohomology for $\cL=\cT_X$ the local Lie algebra of holomorphic vector fields on a complex manifold $X$ has been characterized in \cite{BWgf}.
+In the theorem below,~$Fr_X$ denotes the principal $U(n)$-bundle of unitary frames on $X$.
+
+\begin{thm}
+Let $Y_n$ be the restriction of the universal principal $U(n)$-bundle to the $2n$-skeleton of $BU(n)$.
+Then
+\beqn
+H^\bu_{loc} (\cT(X)) \cong H^\bu(Fr_X \times^{U(n)} Y_n)[2n] .
+\eeqn
+
+In particular, when $X = \C^n$ there are isomorphisms
+\beqn
+H^\bu_{loc} (\cT(\C^n)) \cong H^\bu(\lie{vect}(n))[2n] \cong H^\bu(Y_n)[2n] .
+\eeqn
+\end{thm}
+
+We are most interested in the degree one local cohomology.
+A simple application of the Serre spectral sequence reveals that in this case 
+\beqn
+H^1_{loc}(\cT(\C^n)) = H^{2n+1}(\lie{vect}(n)) = H^{2n+2} (BU(n)) .
+\eeqn
+So, degree one local cohomology classes for $\cT(\C^n)$ are in one-to-one correspondence with degree $2n+2$ polynomials in the universal Chern classes $c_1,\ldots,c_n$.
+
+\subsection{Higher Virasoro Lie algebras}
+
+At this point, we can see how central extensions of the $n$-dimensional Witt algebra appear.
+We have pointed out in \eqref{eqn:localtocompact} how local cohomology classes of a local Lie algebra $\cL$ supported on $U$ determine Lie algebra cohomology classes for the Lie algebra of compactly supported sections $\cL_c(U)$.
+We recall in appendix \cite{appx:model}, the $n$-dimensional Witt algebra $\lie{witt}(n)$ admits a homomorphism of dg Lie algebras
+\beqn
+j \colon \lie{witt}(n) \hookrightarrow \Omega^{0,\bu} (\C^n - \{0\}, \T) = \cT(\C^n - \{0\}),
+\eeqn
+which has the property that in cohomology $H^\bu(j)$ is a dense embedding of topological vector spaces.
+
+We consider the local dg Lie algebra $\Omega^\bu(\R) \otimes \lie{witt}(n)$ defined on the manifold $\R$.
+The differential is 
+\beqn
+\d_{dR} \otimes \id + \id \otimes \dbar_{\lie{witt}},
+\eeqn
+where the first term is the de Rham operator on $\R$ and the second is the internal differential to the dg Lie algebra $\lie{witt}(n)$.
+The bracket is
+\beqn\label{eqn:tensorbracket}
+[\eta \otimes X, \theta \otimes Y] = (\eta \theta) \otimes [X,Y] , \quad \eta,\theta \in \Omega^\bu(\R), \;\; X,Y \in \lie{witt}(n)
+\eeqn
+where $[-,-]$ is the Lie bracket in $\lie{witt}(n)$.
+Using $j$ we will construct a map (up to homotopy) of the form
+\beqn
+\til j \colon \Omega^\bu_c (\R) \otimes \lie{witt}(n) \to \cT_c (\C^n - 0)
+\eeqn
+as follows.
+
+Introduce the following local dg Lie algebra $\cL_{log}$ on $\R$ which is the same underlying complex of vector bundles as $\Omega^\bu (\R) \otimes  \lie{witt}(n)$, except with the Lie bracket defined by the formulas
+\begin{align*}
+\left[f \otimes \alpha \frac{\del}{\del z_i} , g \otimes \beta \frac{\del}{\del z_j}\right]_{\cL_{log}} & = fg \otimes \left[\alpha \frac{\del}{\del z_i}, \beta \frac{\del}{\del z_j}\right] +  f g' \otimes \lambda_i \alpha \beta \frac{\del}{\del z_j} - (-1)^{\alpha \beta} f' g \otimes \lambda_j \alpha \beta  \frac{\del}{\del z_i}  \\
+\left[f \otimes \alpha \frac{\del}{\del z_i} , g \d t \otimes \beta \frac{\del}{\del z_j}\right]_{\cL_{log}} & = fg \d t \otimes \left[\alpha \frac{\del}{\del z_i}, \beta \frac{\del}{\del z_j}\right] + f g' \d t \otimes \lambda_i \alpha \beta \frac{\del}{\del z_j} - (-1)^{\alpha \beta} f' g \d t \otimes \lambda_j \alpha \beta  \frac{\del}{\del z_i} \\
+& + fg \otimes \alpha (\dbar \lambda_i) \beta \frac{\del}{\del z_j} , \\ 
+\left[f \d t \otimes \alpha \frac{\del}{\del z_i} , g \d t \otimes \beta \frac{\del}{\del z_j}\right]_{\cL_{log}} & = 0 .
+\end{align*}
+Here $\alpha, \beta \in \sfA_n$, $f,g \in C^\infty(\R)$, and we have used the notation from the appendix $\lambda_i = \frac{\zbar_i}{z \zbar}$.\footnote{When $n=1$ we set $\lambda = \frac{1}{z}$, and the brackets in $\cL_{log}$ simplify to
+\[
+[f \otimes L_n, g \otimes L_m ] = (m-n) fg \otimes L_{n+m} + (fg' - f'g) \otimes L_{n+m} ,
+\] 
+for example.  }
+Notice that the first terms on the right hand sides of the expressions above agree with the Lie bracket in \eqref{eqn:tensorbracket}.
+We also remark that the second line of the second equation is identically zero when $n = 1$.
+
+We now construct an $L_\infty$ equivalence 
+\beqn
+\Phi = (\Phi^{(1)}, \Phi^{(2)}) \colon \Omega^\bu(\R) \otimes \lie{witt}(n) \rightsquigarrow \cL_{log} .
+\eeqn
+Let $\Phi^{(1)} = \id$ and 
+\begin{align*}
+\Phi^{(2)}\left(f \d t\otimes \alpha \frac{\del}{\del z_i} , g \otimes \beta \frac{\del}{\del z_j} \right) & = fg \otimes \lambda_i \alpha \beta \frac{\del}{\del z_j} \\
+\Phi^{(2)}\left(f \d t \otimes \alpha \frac{\del}{\del z_i} , g \d t \otimes \beta \frac{\del}{\del z_j} \right) & = fg \d t \otimes \alpha \beta \left(\lambda_i \frac{\del}{\del z_j} + \lambda_j \frac{\del}{\del z_i} \right) .
+\end{align*}
+To see that $\Phi = (\Phi^{(1)}, \Phi^{(2)})$ is an $L_\infty$ morphism we observe the following relations:
+\begin{multline}
+\Phi^{(2)}\left(\d f \otimes \alpha \frac{\del}{\del z_i} , g \otimes \beta \frac{\del}{\del z_j}\right) - (-1)^{\alpha} \Phi^{(2)}\left(f \otimes \alpha \frac{\del}{\del z_i} , \d g \otimes \beta \frac{\del}{\del z_j}\right) \\ = f g' \otimes \lambda_i \alpha \beta \frac{\del}{\del z_j} - (-1)^{\alpha \beta} f' g \otimes \lambda_j \alpha \beta  \frac{\del}{\del z_i} ,
+\end{multline}
+and
+\begin{multline}
+- (\d + \dbar_{\lie{witt}}) \Phi^{(2)}\left(f \otimes \alpha \frac{\del}{\del z_i} , g \d t \otimes \beta \frac{\del}{\del z_j}\right) + \Phi^{(2)}\left(\d f \otimes \alpha \frac{\del}{\del z_i} , g \d t \otimes \beta \frac{\del}{\del z_j}\right) \\ + \Phi^{(2)}\left(f \otimes \dbar \alpha \frac{\del}{\del z_i} , g \d t \otimes \beta \frac{\del}{\del z_j}\right) - (-1)^\alpha \Phi^{(2)}\left(f \otimes \alpha \frac{\del}{\del z_i} , g \d t \otimes \dbar \beta \frac{\del}{\del z_j}\right)  \\ = f g' \d t \otimes \lambda_i \alpha \beta \frac{\del}{\del z_j} - (-1)^{\alpha \beta} f' g \d t \otimes \lambda_j \alpha \beta  \frac{\del}{\del z_i} + fg \otimes \alpha (\dbar \lambda_i) \beta \frac{\del}{\del z_j} ,
+\end{multline}
+where $f,g \in C^\infty(\R)$ and $\alpha \frac{\del}{\del z_i}, \beta \frac{\del}{\del z_j} \in \lie{witt}(n)$.
+
+The $L_\infty$-map $\Phi$ clearly is given by differential operators, so it defines a homomorphism of \textit{local} dg Lie algebras on the manifold $\R$.
+We have shown the following.
+
+\begin{prop}
+The local dg Lie algebras $\Omega^\bu_\R \otimes \lie{witt}(n)$ and $\cL_{log}$ are $L_\infty$-equivalent.
+In particular, the map $\Phi$ defines a quasi-isomorphism of commutative dg algebras
+\beqn
+\Phi^* \colon C^\bu(\cL_{log,c}(\R)) \xto{\simeq} C^\bu(\Omega^{\bu}_c(\R) \otimes \lie{witt}(n))
+\eeqn
+which restricts to a quasi-isomorphism
+\beqn
+\Phi^* \colon C_{loc}^\bu(\cL_{log}) \xto{\simeq} C_{loc}^\bu(\Omega^\bu(\R) \otimes \lie{witt}(n)) .
+\eeqn
+\end{prop}
+
+Next we define a homomorphism of dg Lie algebras
+\beqn
+\til j \colon \cL_{log}(\R) \to \cT(\C^n - \{0\})
+\eeqn
+by the formulas
+\begin{align*}
+\til j \left(f(t) \otimes \alpha \frac{\del}{\del z_i}\right) & = f(\log z \zbar) \alpha \frac{\del}{\del z_i} \\
+\til j \left(f(t) \d t \otimes \alpha \frac{\del}{\del z_i}\right) & = f(\log z \zbar) \dbar (\log z \zbar )\alpha \frac{\del}{\del z_i} .
+\end{align*}
+It is immediate to verify that this is a cochain map and it is compatible with Lie brackets. (In fact, the complicated form of the Lie bracket defining $\cL_{log}$ was motivated by this embedding.)
+
+\begin{lem}
+The cochain map
+\beqn
+\til j^* \colon C^\bu (\cT_c(\C^n - 0)) \to C^\bu \left(\cL_c(\R) \right)
+\eeqn
+given by restriction along $\til j$ preserves local cochains. 
+Furthermore, if $\phi$ is a local cochain for $\cT(\C^n - 0)$ then $\til j^* \phi$ is translation invariant as a local cochain on $\R$. 
+Thus, $\til j$ determines a homomorphism
+\beqn
+\til j^* \colon C^\bu_{loc}(\cT(\C^n-0)) \to C^\bu_{loc}\left(\cL_{log}\right)^{\R} .
+\eeqn
+\end{lem}
+
+Finally, we have the following relationship between translation invariant local cohomology classes for the local Lie algebra $\Omega^\bu \otimes \lie{witt}(n)$ and Lie algebra cohomology classes for $\lie{witt}(n)$.
+
+\begin{lem}
+Let $\lie{g}$ be any dg Lie algebra and consider the resulting local Lie algebra $\Omega^\bu_\R \otimes \lie{g}$ on the manifold $\R$.
+Then
+\beqn
+H_{loc}^\bu\left(\Omega^\bu_\R \otimes \lie{g}\right)^\R \cong H^{\bu+1}(\lie{g}) .
+\eeqn
+\end{lem}
+
+Combining all of these results, we see that the composition
+\beqn
+C_{loc}^\bu (\cT) \xto{\til j^*} C^\bu_{loc}(\cL_{log})^{\R} \xto{\Phi^*} C^\bu_{loc}(\Omega^\bu_\R \otimes \lie{witt}(n))^{\R} 
+\eeqn
+defines, at the level of degree one cohomology, a linear map
+\beqn
+H^{2n+2}(BU(n)) \to H^{2} (\lie{witt}(n)) .
+\eeqn
+
+\begin{dfn}
+Every degree $2n+2$ polynomial $\bfc \in H^{2n+2}(BU(n))$ in the universal Chern classes $c_1,\ldots,c_n$ determines a central extension of the dg Lie algebra $\lie{witt}(n)$.
+We denote this central extension
+\beqn
+0 \to \C \to \lie{vir}_{\bfc}(n) \to \lie{witt}(n) \to 0 ,
+\eeqn
+and refer to it as the $n$-dimensional Virasoro Lie algebra of central charge $\bfc$.
+\end{dfn}
+
+We can be explicit about the correspondence between universal characteristic classes and central extensions of $\lie{witt}(n)$ for small values of $n$.
+When $n = 1$ we have $\lie{witt}(1) = \C[z^\pm] \del_z$.
+Following \cite{BWgf}, the class $c_1^2 \in H^4(BU(1))$ corresponds to the local cocycle
+\beqn
+\int_{\C} J \mu \del J \mu
+\eeqn
+where $\mu = \alpha (z,\zbar) \del_z$ is a section of $\cT$ and $J \mu = \del_z \alpha(z,\zbar)$.
+Following the above restrictions and equivalences, we see that this corresponds to the usual Virasoro cocycle
+\beqn
+(f \del_z, g \del_z) \mapsto \op{Res}_z f'(z) g''(z) \d z , \quad f,g \in \C[z^\pm]
+\eeqn
+Of course, in this case, all Virasoro Lie algebras corresponding to a nonzero central charge are isomorphic.
+
+Next consider $n=2$, so that the possible central charges are linear combinations of $c_1^3, c_1 c_2 \in H^4(BU(2))$.
+For simplicity, consider the class $c_1^3$.
+It is shown in \cite{BWgf} that a local cocycle representative corresponding to this class is a multiple of
+\beqn
+\int_{\C^2} \op{Tr}(J \mu) \del \op{Tr}(J \mu) \del \op{Tr}(J \mu) .
+\eeqn
+The corresponding degree two cocycle of $\lie{witt}(2)$ is
+\beqn
+c_1^3 \colon (\mu_0,\mu_1,\mu_2) \mapsto \op{Res}_z \op{Tr}(J \mu_0) \del \op{Tr}(J \mu_1) \del \op{Tr}(J \mu_2)
+\eeqn
+where $\mu_i \in \lie{witt}(2)$.
+Here $\op{Res}_z \colon H^1(\sfA_2) \to \C$ is the higher residue as defined in appendix \ref{appx:model}.
+We observe that sense the residue carries degree one, and that the cocycle above is of polynomial degree three, that $c_1^3$ of $\lie{witt}(2)$ is of total degree two as desired.
+As another example, the $2$-dimensional Virasoro algebra of central charge $c_1\op{ch}_2 = \frac12 (c_1^3 - 2 c_1 c_2)$ is determined by the degree two cocycle
+\beqn
+c_1 \ch_2 \colon (\mu_0,\mu_1,\mu_2) \mapsto \op{Res}_z \op{Tr}(J \mu_0) \op{Tr}(\del J \mu_1 \del J \mu_2) + \cdots ,
+\eeqn
+where the $\cdots$ denote appropriate anti-symmetrization.
+
+\subsection{Enveloping factorization algebras}
+
+Let $\cE$ be a vector bundle on a manifold $M$ and let $\cE_c$ denote its cosheaf of compactly supported sections.
+It is shown how the assignment of the graded vector space
+\beqn
+\Sym \, \cE_c(U) = \oplus_{n \geq 0} \Gamma_c(U, \Sym^n E)
+\eeqn
+to an open set $U \subset M$ assemble into a factorization algebra on $M$.
+
+Now, let $\cL = \Gamma(M,L)$ be a local dg Lie algebra on a manifold $M$.
+Applying the above construction to $E[-1] = L$ gives rise to the factorization algebra which assigns to an open set $U \subset M$ the graded vector space 
+\beqn
+\Sym \, \cL_c (U) [1] .
+\eeqn
+For each open set $U$ this graded vector space is equipped with a differential $\d_{CE}$ whose cohomology computes the Lie algebra homology of the dg Lie algebra $\cL_c(U)$.
+The resulting dg factorization algebra is denoted by $C_\bu(\cL_c)$ and is called the \defterm{enveloping factorization algebra} associated to the local Lie algebra $\cL$. 
+
+Next, we recall shifted central extensions of dg Lie algebras.
+Suppose that $(\lie{g},\d_{\lie{g}})$ is a dg Lie algebra and consider its Chevalley--Eilenberg complex $C^\bu(\lie{g};\C)$ computing its Lie algebra cohomology.
+This complex is bigraded with the first grading being the internal degree to $\lie{g}$ and the second grading being the graded polynomial degree.
+Suppose $\phi$ is a cochain of totalized degree $k$; we assume that it is concentrated in graded polynomial degree $\geq 1$.
+Then $\phi$ can be expressed as
+\beqn
+\phi = \phi_1 + \phi_2 + \cdots 
+\eeqn
+where $\phi_i$ carries polynomial degree $i$ and internal cohomological degree $k-i$.
+
+Suppose now that $\phi$ is a cocycle, meaning it is closed for the totalized Chevalley--Eilenberg differential.
+It then defines an $L_\infty$-algebra central extension
+\beqn
+0 \to \C K [k-2] \to  \til{\lie{g}} \to \lie{g} \to 0
+\eeqn
+with $\ell$-ary brackets defined by
+\begin{itemize}
+\item $\ell = 1$
+The differential is $[-]_1 = \d_{\lie{g}} + K \phi_1$ where $K \phi_1 \colon \lie{g} \to \C K$ is the first term in the expansion of $\phi$.
+\item $\ell=2$. 
+The bracket is $[x,y] = [x,y]_{\lie{g}} + K \phi_2(x,y)$, where $x,y \in \lie{g}$.
+\item $\ell > 2$.
+The $\ell$-ary bracket is
+\beqn
+[x_1,\ldots,x_\ell]_\ell = K \phi_\ell(x_1,\ldots,x_\ell) .
+\eeqn
+\end{itemize}
+The central summand of $\til{\lie{g}}$ appears in cohomological degree $2-k$. 
+The Chevalley--Eilenberg complex computing Lie algebra homology $C_\bu(\til{\lie{g}})$ is a dg $\C[K]$-module where~$K$ carries cohomological degree $k-1$.
+
+
+For any local Lie algebra $\cL$ on $M$ we recalled how to construct its enveloping factorization algebra $C_\bu(\cL_c)$ on $M$.
+Given a local cocycle $\phi$ of cohomological degree $+1$, there is a $\phi$-twisted version of the enveloping factorization algebra $C_\bu^\phi(\cL_c)$ which we will now recall. 
+For more details we refer to \cite[\S 11]{CG2}.
+
+For every open set $U \subset M$ there is a cochain map
+\beqn
+C^\bu_{loc}(\cL)(U) \to C^\bu(\cL_c(U))
+\eeqn
+So local cocycles define cocycles for the cosheaf of dg Lie algebras $U \mapsto \cL_c(U)$.
+In particular, $\phi$ defines a precosheaf of $L_\infty$ algebras
+\beqn
+0 \to \ul \C[-1] \to \til \cL_c \to \cL_c \to 0 ,
+\eeqn
+where $\ul \C[-1]$ is the constant precosheaf which assigns $\C[-1]$ in degree $+1$ to every open set.
+In \cite{CG2} it is shown that the assignment
+\beqn
+U \subset M \mapsto C_\bu(\til \cL_c (U)) 
+\eeqn
+defines a factorization algebra on $M$ in $\C[K]$-modules (where, now $K$ has degree zero).
+This is the \defterm{$\phi$-twisted} factorization enveloping algebra which we will denote by $C^\phi_\bu(\cL_c)$.
+It has the property that the $K=0$ specialization is the (untwisted) enveloping factorization algebra $C_\bu(\cL_c)$.
+
+\subsection{Virasoro factorization algebras}
+
+\begin{dfn}\label{dfn:vir}
+Fix a complex dimension $n$ and let
+\beqn
+\bfc \in H^{2n+2}(BU(n)) \cong H^1_{loc}(\cT_{\C^n}) .
+\eeqn
+The \defterm{Virasoro factorization algebra} on $\C^n$ is the twisted enveloping factorization algebra of $\cT_{\C^n}$ corresponding to this local cohomology class
+\beqn
+\Vir_{\bfc} \define C_\bu^{\bfc}(\cT_{\C^n,c})|_{K=1} .
+\eeqn
+\end{dfn}
+
+The primary motivation for this terminology is the main result of \cite{BWvir} which exhibits the relationship between the $n=1$ Virasoro factorization algebra and the Virasoro vertex algebra.
+Recall that there is a systematic relationship between (algebro-geometric) factorization algebras on $M = \C$ and vertex algebras \cite{BD}.
+In \cite{CG1}, this relationship is made precise in the form of a functor $\VV$ from a certain category of `tame' holomorphic factorization algebras on $M = \C$ to the category of ($\Z$-graded) vertex algebras.
+
+\begin{thm}[\cite{BWvir}]
+For $c \in \C$ consider the class
+\beqn
+\frac{c}{24} c_1^2 \in H^4(BU(1)) 
+\eeqn
+and the associated Virasoro factorization algebra $\Vir_{c c_1^2/24}$ on $\C$.
+This is a tame holomorphic factorization algebra and its associated vertex algebra $\VV(\Vir_{c c_1^2/24})$ is equivalent to the Virasoro vertex algebra of central charge $c$.
+\end{thm}
+
+We now arrive at the main definition of this section.
+To set it up, we recall some notions.
+
+\begin{dfn}
+A \textit{holomorphic structure} on a factorization algebra $\cF$ on $\C^n$ of central $\bfc \in H^{2n+2}(BU(n))$ is a map of factorization algebras
+\beqn
+\bT \colon \Vir_{\bfc} \to \cF .
+\eeqn
+\end{dfn}
+
+\subsection{Relationship to higher Virasoro Lie algebras}
+
+In this section we show how to produce central extensions of $\lie{witt}(n)$ using factorization algebras.
+Let $\bfc$ be as in definition \ref{dfn:vir} and consider the associated Virasoro factorization algebra on $\C^n$ by $\Vir_{\sfc}$.
+
+\begin{lem}
+There is an $T^n = S^1\times \cdots \times S^1$-action on the factorization algebra $\Vir_{\sfc}$ which covers the $T^n$ action on $\C^n$ rotating each coordinate plane.
+\end{lem}
+\begin{proof}
+There's a natural action of $T^n$ on the Dolbeault complex
+\beqn
+\cT = \Omega^{0,\bu}(\C^n, T)
+\eeqn
+induced by pullback of forms.
+Since rotation is holomorphic, this is equivariant for the $\dbar$-operator and is compatible with the Lie bracket of vector fields.
+This implies that there is a $T^n$ action on the untwisted factorization enveloping algebra $\Vir_{0}$.
+
+For the case $\bfc \ne 0$ we need to see that the corresponding local functional is invariant under such rotations.
+If $\sum_i g_i(z) \del_{z_i}$ is a vector field then rotation by $\lambda \in S^1$, the $i$th circle, gives the vector field $\sum_i \lambda_i^{-1} g_i(\lambda_i z) \del_{z_i}$ \brian{A little stuck} 
+\end{proof}
+
+We restrict the factorization algebra $\Vir_{\bfc} |_{\C^n - \{0\}}$ to define a factorization algebra the punctured plane $\C^n - \{0\}$.
+Let 
+\beqn
+\rho \colon \C^n - \{0\} \to \R_+
+\eeqn
+be the square of the radius $(z_1,\ldots,z_n) \mapsto |z_1|^2 + \cdots + |z_n|^2$, and consider the resulting factorization algebra 
+\beqn
+\rho_* \left(\Vir_{\bfc} |_{\C^n - \{0\}}\right)
+\eeqn
+on $\R_+$ whose value on an open interval $I \subset \R_+$ is the value of $\Vir_{\bfc}$ on the open annular region $\rho^{-1}(I) \subset \C^n$.
+
+For $\bfk = (k_1,\ldots,k_n)\in \Z^n$, denote by $\cF_{\bfc}^{(\bfk)}$ the $\bfk$-eigenspace for this $T^n$ action.
+Define the factorization algebra
+\beqn
+\cF_{\bfc} \define \oplus_{\bfk \in \Z^m} \cF_{\bfc}^{(\bfk)} .
+\eeqn
+
+\begin{prop}
+The factorization algebra $\cF_{\bfc}$ is a locally constant factorization algebra on~$\R_+$. 
+Its associated $\mathbb{E}_1$-algebra is the $\mathbb{E}_1$-enveloping algebra of the dg Lie algebra $\vir_{\bfc}$ given by the central extension
+\beqn
+0 \to \C \to \lie{vir}_{\bfc} (n) \to \lie{witt}(n) \to 0
+\eeqn
+determined by the degree two cocycle which is the image of $\bfc$ 
+\beqn
+H^1_{loc}(\cT
+\eeqn
+\end{prop}
+
+\subsubsection{No central extension}
+
+\subsubsection{Turning on the central extension}
+
+
+\section{Deligne truncations of de Rham cohomology}
+
+\subsection{Closed forms in complex geometry}
+
+If $X$ is a complex manifold, and $k$ a non-negative integer, let 
+\beqn
+\Omega^{k,\bu}(X) = \Omega^{0,\bu}(X, \wedge^p \T_X)
+\eeqn
+be the graded vector space of $(k,\bu)$ forms on $X$, where the space of $(p,q)$ forms sit in cohomological degree $q$.
+This graded vector space is equipped with the natural $\dbar$ operator turning $\Omega^{p,\bu}(X)$ into a dg $\Omega^{0,\bu}(X)$-module.
+
+For $U \subset X$ any open set, we can also consider the complex of $(p,\bu)$-forms supported on $U$.
+In fact, $U \mapsto \Omega^{p,\bu}(U)$ defines a sheaf of cochain complex which by Dolbeault's theorem is quasi-isomorphic to the sheaf of holomorphic $p$-forms $\Omega^{p,hol}_X$.
+
+The holomorphic de Rham operator is of the form
+\beqn
+\del \colon \Omega^{p,\bu}_X \to \Omega^{p+1,\bu}_X .
+\eeqn
+The total complex
+\beqn
+\left(\Omega^{\bu,\bu}_X , \dbar + \del\right) = \left(\oplus_{p} \Omega^{p,\bu}_X [-p], \dbar + \del \right) 
+\eeqn
+is quasi-isomorphic to the (complexified) smooth de Rham complex $\Omega^\bu_X$ equipped with the smooth de Rham differential.
+
+We are interested in a truncation of the full de Rham complex.
+Define the following sheaf of cochain complexes 
+\beqn
+\Omega^{\geq p, \bu}_X \define \left(\Omega^{p,\bu} \xto{\del} \Omega^{p+1,\bu}[-1] \xto{\del} \cdots \right) 
+\eeqn
+where the $\dbar$ operator is left implicit.
+Explicitly, a section of this sheaf of cohomological degree $k$ is a sum of $(p',q)$ forms where $p' + q = k$ and $p' \geq p$.
+
+\begin{prop}
+The complex of sheaves $\Omega^{\geq p, \bu}_X$ is a free resolution of the sheaf of $\del$-closed, holomorphic $p$-forms on $X$.
+\end{prop}
+
+\begin{dfn}
+Let $X$ be an $(2n+1)$-dimensional complex manifold, define $\cB_X$ to be the sheaf of cochain complexes 
+\beqn
+\fields_X \define \Omega^{\geq n+1, \bu}_X [n] .
+\eeqn
+This is the complex resolving the sheaf of closed $(n+1)$-forms placed in cohomological degree $-n$.
+\end{dfn}
+
+\section{Free-field factorization algebras}
+
+\subsection{Weyl factorization algebras}
+\label{ss:weyl}
+
+Suppose that $V$ is a symplectic vector space with symplectic form $\omega$.
+The Heisenberg Lie algebra is the central extension of $V$ (viewed as an abelian Lie algebra) defined by $\omega$, viewed as a $2$-cocycle.
+The non-degeneracy of $\omega$ is not important for this construction, any $\omega \in \wedge^2 V^*$ defines a central extension of~$V$.
+The Weyl algebra associated to $V$ is the universal enveloping algebra of this central extension where the central parameter is set to the unit.
+In this section we review a factorization algebra enhancement of this construction.
+
+Let $(E,Q)$ be a complex of vector bundles on a manifold $M$ and consider the precosheaf of commutative algebras
+\beqn
+\Sym(\cE_c) \colon U \subset M \mapsto \Sym(\cE_c(U)) .
+\eeqn
+If $\sqcup U_i \hookrightarrow V$ is a collection of disjoint open sets embedded inside of another open set then multiplication on this precosheaf determines a morphism
+\beqn\label{eqn:freefactmaps}
+\otimes \Sym(\cE_c(U_i)) \to \Sym(\cE_c(V)) .
+\eeqn
+By \cite[??]{CG1} this endows $\Sym(\cE_c)$ with the structure of a factorization algebra.
+We recalled in section \ref{sec:enveloping} how a deformation of this in the case that $E[-1] = L$ is a local Lie algebra on $M$ gives rise to the enveloping factorization algebra associated to $L$.
+
+A generalization of this construction involves the data of a local functional 
+\beqn
+\omega \in \oloc(E)
+\eeqn
+of cohomological degree $+1$ which satisfies $Q \omega = 0$.
+For each open set $U \subset M$, there is a natural inclusion $\cO_{loc}(E) (U) \hookrightarrow \cO(\cE_c(U))$ so that we can view $\omega$ as a functional
+\beqn
+\omega \colon \Sym(\cE_c(U)) \to \C .
+\eeqn 
+Let $\omega_{[k]}$ be the $k$th homogenous part of $\omega$ so that 
+\beqn
+\omega_{[k]} \colon \Sym^k (\cE_c(U)) \to \C
+\eeqn
+We extend $\omega$ to a map $Q_{\omega_{[k]}} \colon \Sym(\cE_c(U)) \to \Sym(\cE_c(U))[1]$ of cohomological degree one by declaring that for each $k$ $\omega_{[k]}$  \brian{finish} and we let $Q_{\omega} = \sum Q_{\omega_{[k]}}$.
+
+\begin{prop}[\cite{CG1}]
+Let $K$ be a parameter of cohomological degree zero.
+The assignment
+\beqn
+\cW_{E,\omega} \colon U \subset M \mapsto \left(\Sym(\cE_c(U))[K], Q + K Q_\omega \right)
+\eeqn
+has the structure of a factorization algebra in the category of dg $\C[K]$-modules with structure maps \eqref{eqn:freefactmaps}.
+We refer to this as the \defterm{Weyl factorization algebra} associated to $E,\omega$.
+\end{prop}
+
+\begin{eg}
+Let $V$ be an ordinary vector space and $\omega_V \in \wedge^2 V^*$ a symplectic form.
+Consider the complex of vector bundles on the real line
+\beqn
+\Omega^0(\R) \otimes V \xto{\d \otimes \id} \Omega^1 (\R) \otimes V ,
+\eeqn
+where $\Omega^0$ is placed in degree zero.
+Then $\omega = \int_\R \omega_V$ defines a local functional of degree $+1$ on this complex which satisfies~$\d \omega = 0$.
+The Weyl factorization algebra in this case is locally constant on $\R$ and its associated $\EE_1$-algebra is equivalent to the ordinary Weyl associative algebra on the symplectic vector space~$V$.
+More generally, if $V$ is an $n$-shifted symplectic vector space then the corresponding local functional on the complex of vector bundles $\Omega^\bu(\R^n) \otimes V$ is also degree $+1$.
+The associated Weyl factorization algebra is locally constant and is a $\mathbb{E}_n$-algebra analog of the ordinary Weyl algebra.
+\end{eg}
+
+\subsection{Quantization in the BV formalism}
+
+The Weyl algebra is the result of deformation quantization of the simplest symplectic space.
+In this section we show that the Weyl factorization algebra is also the result of a sort of quantization in the context of the Batalin--Vilkovisky (BV) formalism.
+In the case that $\omega \in \oloc(E)$ arises from a bundle morphism
+\beqn\label{eqn:nondeg}
+\omega \colon E \otimes E \to \op{Dens}_M
+\eeqn
+which is fiberwise non-degenerate then the data $(E,\omega,Q)$ defines a free BV theory in the sense of \cite[definition 4.2.0.2]{CG2}.
+In this case, the associated factorization algebra of quantum observables is quasi-isomorphic to the Weyl factorization algebra \cite[Proposition 8.1.3.1]{CG2}.
+In this section, we introduce a generalization of the notion of a free BV theory whose BV quantization is captured by the Weyl factorization algebras of the previous section.
+
+First, we recall some notation.
+The $!$-dual (or Serre dual) of a vector bundle $E$ is the bundle $E^! = E^* \otimes \op{Dens}_M$ where $E^*$ is the ordinary dual vector bundle and $\op{Dens}_M$ is the density bundle on $M$ (an orientation is an isomorphism $\op{Dens}_M \cong \wedge^n \T_M^*$).
+The linear dual of $\cE = \Gamma(M,E)$ is $\br \cE^!_c = \br \Gamma_c(M, E^!)$ where $\br \Gamma_c$ denotes compactly supported distributional sections.
+There is hence a natural map of cosheaves
+\beqn
+\cE^!_c = \Gamma_c(M,E^!) \hookrightarrow \cE^\vee ,
+\eeqn
+which includes the smooth (non-distributional) sections.
+If $E$ is an elliptic complex of vector bundles then the above map is a quasi-isomorphism.
+In particular, one has the following.
+
+\begin{prop}[see theorem 5.4.0.1 of \cite{CG}]
+Let $(E,Q)$ be an elliptic complex of vector bundles.
+Then the inclusion
+\beqn
+\left(\Sym(\cE_c), Q\right) \hookrightarrow \left(\cO(\cE^!) , Q\right)
+\eeqn
+is an equivalence of factorization algebras.
+If $\omega \in \oloc(E)$ is non-degenerate of the form \eqref{eqn:nondeg} then this is an equivalence of $\PP_0$-factorization algebras.
+\end{prop}
+
+The following paragraph is a review of ideas that appear in \cite{PavelPoisson}.
+Let $(P,\d)$ be a cochain complex. Consider the following commutative dg algebra
+\beqn
+\op{Pol}(P,-1) \define \Sym(P^*) \otimes \Sym(P) .
+\eeqn
+We consider two additional gradings on this algebra.
+The first is by polynomial degree where $P^*$ carries weight $+1$.
+The second endows $P$ with weight $+1$, we refer to this as the weight grading.
+The (shifted) Schouten bracket $[-,-]_{Sch}$ endows this with the structure of a graded (unshifted) Lie algebra. 
+It is defined on this usual way on vector fields $\Sym(P^*) \otimes P \subset \op{Pol}(P,-1)$ and extended to the full algebra by the condition that it is a graded derivation with respect to multiplication.
+A $(-1)$-shifted Poisson structure on $P$ is an element
+\beqn
+\pi \in \op{Pol}(P,-1) [1]
+\eeqn
+of cohomological degree $+1$, concentrated in weights $\geq 2$, which satisfies the Maurer--Cartan equation
+\beqn
+\d \pi + \frac12 [\pi,\pi]_{Sch} = 0 .
+\eeqn
+Such an element can be decomposed $\pi = \pi_2 + \pi_3 + \cdots$ where $\pi_k$ has weight $k$ with respect to the weight grading.
+Contraction with $\pi$ endows the commutative dg algebra $\cO(P)$ with a sequence of brackets $\{-,-\}, \{-,-\}_3, \ldots$ endowing it with the structure of a \textit{homotopy $\PP_0$ algebra} \cite{??}.
+In this paper we only consider $(-1)$-shifted Poisson structures with weight $2$, hence $\cO(P)$ is an ordinary, or strict, $\PP_0$-algebra with bracket we denote by $\{-,-\}$.
+In physics, this is the BV anti-bracket.
+
+Given such a $\pi$ we construct an operator $\triangle_\pi$ acting on $\cO(P)$ defined as follows.
+Let 
+\beqn
+\triangle_{\pi_k} \colon \Sym^k(P^*) \to \C 
+\eeqn
+be contraction with $\pi_k$; extend this to ... \brian{finish}
+
+
+
+\begin{prop}
+Let $(P,\d)$ be a cochain complex and suppose that $\pi$ is a constant coefficient $(-1)$-shifted Poisson structure on $P$.
+Then $\triangle_\pi \circ \triangle_\pi = 0$.
+\brian{BD quantization??}
+\end{prop}
+
+\begin{dfn}\label{dfn:free}
+A \defterm{free BV theory of Poisson type} on a manifold $M$ is an elliptic complex of vector bundles $(\cE,Q)$ on $M$ together with a local, constant coefficient, $(-1)$-shifted local Poisson tensor
+\beqn
+\pi \in ??
+\eeqn
+which satisfies $Q \pi = 0$.
+\end{dfn}
+
+Now we return to the relationship to Weyl factorization algebras.
+A $\PP_0$-structure $\pi$ as in definition \eqref{dfn:free} 
+The factorization algebra of classical observables of a free BV theory of Poisson type is simply $\cO(\cE) = \Sym\left(\cE^\vee\right)$.
+
+
+
+\subsection{The higher-dimensional free boson}
+
+Let $X$ be a $(2n+1)$-dimensional complex manifold and consider the complex of vector bundle $\cA = \cA_X$ from definition \ref{dfn:??}.
+As a graded vector bundle recall that $\cA = \Omega^{\leq n, \bu} [n+1]$.
+
+Define the following pairing on the complex of vector bundles $\cA_{X,c}$:
+\beqn
+\omega(\beta, \gamma) = \int_X \beta \del \gamma .
+\eeqn
+One can immediately check that $\omega$ carries degree $+1$ as required for the construction of the Weyl factorization algebra.
+Importantly, for each open $U \subset X$ the pairing $\omega$ defines the operator $\triangle$ acting on 
+\beqn
+\Sym \left(\cA_c(U) [n+1] \right)
+\eeqn
+by the following rules:
+\begin{itemize}
+\item If $\Phi \in \Sym^{\leq 1}$ then $\triangle \Phi = 0$.
+\item If $\Phi = \beta \gamma \in \Sym^2$ then define
+\beqn
+\triangle (\beta \gamma) = \omega|_{U} (\beta, \gamma) = \int_U \beta \del \gamma .
+\eeqn
+\item \brian{FINISH}.
+\end{itemize}
+
+\begin{dfn}
+Let $X$ be a complex manifold of dimension $2n+1$.
+The \defterm{free boson factorization algebra} on $X$ is
+\beqn
+\cF \define \left(\Sym \left(\Omega^{\leq n}_{X,c} [n+1] \right) \; , \; Q + \triangle \right) ,
+\eeqn
+where $\triangle$ is defined as in items (1)-(3) above.
+In the notation of section \ref{ss:weyl}, $\cF = \cW_{\cA,\omega}$.
+\end{dfn}
+
+Finally, we frame this factorization algebra as a quantization of a free BV theory.
+First, let
+\beqn
+\delta_\Delta \in \br\Omega^{2n+1,2n+1}(X \times X)
+\eeqn
+be the $\delta$-distribution along the diagonal $X \hookrightarrow X \times X$.
+This is a distributional form of Hodge type $(2n+1,2n+1)$ on $X \times X$.
+Applying the holomorphic de Rham operator along one of the directions yields a distribution
+\beqn\label{eqn:fullbcov}
+(\del \otimes \id) \delta_{\Delta} \in \br\Omega^{2n+2,2n+1}(X \times X) .
+\eeqn
+This is the full BCOV propagator as introduced in \cite{CLbcov1,CLbcov2}.
+We are only interested in a particular component of this distributional section.
+There is a K\"unneth decomposition
+\beqn
+\br\Omega^{2n+2,2n+1}(X \times X) = \bigoplus_{k=1}^{2n+1} C^k ,
+\eeqn
+where $C^k = \oplus_{q+q'=2n+1} \br \Omega^{k,q}(X) \hotimes \br \Omega^{2n+2-k,q'}(X)$.
+We let
+\beqn\label{eqn:poisson1}
+\pi \in C^{n+1} = \bigoplus_{q+q'=2n+1} \br \Omega^{n+1,q}(X) \hotimes \br \Omega^{n+1,q'}(X) 
+\eeqn
+be the projection of \eqref{eqn:fullbcov} to the component $C^{n+1}$.
+
+\begin{lem}
+This $\pi$ determines a section
+\beqn
+\pi \in \br \fields_X \hotimes \br \fields_X [-1]
+\eeqn
+which satisfies $\d_{\fields} \pi = 0$.
+Thus $\pi$ endows $\fields$ with the structure of a free BV theory of Poisson type.
+\end{lem}
+
+\begin{prop}
+Let $X$ be a complex manifold of dimension $2n+1$.
+The free boson factorization algebra $\cF$ is the BV quantization of the free BV theory of Poisson type whose fields are
+\beqn
+\fields = \Omega^{\geq n+1, \bu}_X [n]
+\eeqn
+and whose $(-1)$-shifted local Poisson structure is $\pi$ as in \eqref{eqn:poisson1}.
+More precisely, there is an equivalence of factorization algebras
+\beqn
+\cF \xto{\simeq} \Obs^q (\fields)|_{\hbar = 1} .
+\eeqn
+\end{prop}
+
+\begin{prop}[\cite{GRWcs}]
+This free theory of Poisson type is a boundary theory for $(4n+3)$-dimensional abelian $(2n+1)$-form Chern--Simons theory on the product manifold $X \times \R_+$.
+The boundary factorization algebra of quantum observables is equivalent to $\cF$.
+\end{prop}
+
+\section{Segal--Sugawara construction}
+
+
+
+
+\begin{thm}
+Let $X$ be a complex manifold of dimension $2n+1$ and let
+\beqn
+\mathbf{c} \define \sum^{n}_{k = 0} (-1)^k \op{Td} \cdot \op{ch}(\wedge^k T)|_{4n+4} \in H^{4n+4}(BU(2n+1)) .
+\eeqn
+Then the current $\int \alpha \iota_X \alpha$ extends to a map of factorization algebras on $X$:
+\beqn
+\cV\op{ir}_{\mathbf{c}} \to \cB .
+\eeqn
+\end{thm}
+
+\subsection{Equivariant master equations}
+
+Suppose that $P$ is a $(-1)$-shifted Poisson dg vector space.
+Then we have seen that the (BV) bracket endows $\cO(P)[-1]$ with the structure of a dg Lie algebra (generally this is just an $L_\infty$ algebra if the Poisson structure $\pi$ has components of weight $\geq 3$).
+A strict Hamiltonian action of a dg Lie algebra $\lie{g}$ on $P$ is the data of a map of dg Lie algebra
+\beqn\label{eqn:moment}
+T \colon \lie{g} \to \cO(P)[-1]\footnote{Alternatively, this can be thought of as arising from a shifted version of the moment map $P \to \lie{g}^*[-1]$, where the $(-1)$-shifted Poisson structure on $\lie{g}^*[-1]$ is, like the Kostant--Kirillov Poisson structure, determined by the Lie bracket of $\lie{g}$.}.
+\eeqn
+The (BV) bracket is a map of dg Lie algebras $\{-,-\} \colon \cO(P)[-1] \to \op{Vect}(P)$; hence a Hamiltonian action defines, in particular, an infinitesimal $\lie{g}$-action on $P$.
+
+Hamiltonian actions of the above type can be classified as follows.
+Recall that the Chevalley--Eilenberg cochain complex $C^\bu(\lie{g})$ is a commutative dg algebra whose cohomology is the Lie algebra cohomology of $\lie{g}$ (with trivial coefficients).
+Consider the dg Lie algebra
+\beqn\label{eqn:babycme}
+C^\bu(\lie{g}) \otimes \cO(P)[-1] 
+\eeqn
+where the bracket uses the product on the Chevalley--Eilenberg complex and the bracket on $\cO(P)$.
+Hamiltonian actions \eqref{eqn:moment} define Maurer--Cartan elements in this dg Lie algebra.
+More generally, we define a \defterm{Hamiltonian action} of $\lie{g}$ on the $(-1)$-shifted Poisson space $P$ to be a Maurer--Cartan element in this dg Lie algebra.
+Directly in terms of the Lie algebra $\lie{g}$ these correspond to $L_\infty$ morphisms from $\lie{g}$ to $\cO(P)[-1]$.
+Strict Hamiltonian actions are those which are linear in $\lie{g}$.
+The Maurer--Cartan element equation for \eqref{eqn:babycme} is
+\beqn
+\d_{CE} J + \d_{P} J + \frac12 \{J,J\}  = 0
+\eeqn
+where $\d_{CE}$ is the Chevalley--Eilenberg differential for $\lie{g}$, $\d_P$ is the internal differential to $P$, and $\{-,-\}$ is the $(-1)$-shifted Poisson bracket on $\cO(P)$.\footnote{If $\pi$ has components of higher weight then \eqref{eqn:babycme} is only an $L_\infty$ algebra and the MC equation will also involve the higher brackets.}
+
+
+\subsection{Stress tensor}
+In this section, we fix a complex manifold $X$ of dimension $2n+1$ on which all objects are defined.
+For $\mu \in \cT$ define the local functional
+\beqn
+T(\mu) \in \oloc(\fields)
+\eeqn
+by the formula
+\beqn
+T(\mu) = \sum_{k \geq 1} f(k) \int \alpha \iota_\mu^k \alpha .
+\eeqn
+
+\begin{lem}
+The functional
+\beqn
+T \in \op{Act}(\cT,\fields)^1 
+\eeqn
+satisfies the classical master equation
+\beqn
+\d_{\cT} T + \del T + \frac12 \{T,T\} = 0 .
+\eeqn
+\end{lem}
+\begin{proof}
+First we compute
+\beqn
+\d_{\cT} T = - \sum_{k \geq 1} k f(k) \int \alpha \iota_{[\mu,\mu]} \iota^{k-1}_\mu \alpha 
+\eeqn
+and
+\beqn
+\del T = \sum_{k \geq 1} \int \alpha \iota_\mu^k \del \alpha .
+\eeqn
+
+Next, we compute
+\beqn
+\{\int \alpha \iota_{\mu} \alpha, \int \alpha \iota_{\mu'} \alpha\} = \int \del 
+\eeqn
+\end{proof}
+
+\subsection{Modified stress tensor}
+
+\section{Examples}
+
+\subsection{The ordinary Segal--Sugawara construction}
+
+The most general stress tensor is
+\beqn
+T_a(X) = \int \alpha \iota_X \alpha + \hbar a \int \alpha (J X)  
+\eeqn
+
+The central charge is $c = 1 + \hbar^2 \frac{1}{24} a^2$.
+
+\subsection{Coupling in topological string theory}
+
+The most general stress tensor is
+\beqn
+T_{\bfa} (X) = \int \alpha \iota_X \alpha + a_1 \int \alpha \op{Tr}(J X \del J X) + a_2 \int \alpha \op{Tr}(J X) \op{Tr}(\del J X) .
+\eeqn
+
+\subsection{Coupling in type IIB string theory}
+
+\newpage
+
+\appendix
+
+\section{A dg model for the punctured formal disk} \label{appx:A}
+Let $\sfA'$ be the graded polynomial algebra
+\beqn
+\C[z_i, \lambda_j, \mu_k]
+\eeqn
+where $i,j,k=1,2,3$ and the cohomological degrees of the generators are:
+\beqn
+\op{deg}(z_i) = \op{deg}(\lambda_j) = 0, \quad \op{deg}(\mu_i) = 1 .
+\eeqn
+Define the degree $2$ element
+\beqn
+\omega \define \sum_{ijk} \eps_{ijk} z_i \mu_j \mu_k = z_1 \mu_2 \mu_3 - z_2 \mu_1 \mu_3 + z_3 \mu_1 \mu_2 .
+\eeqn
+Define the differential $\d$ on $\sfA'$ on generators as follows
+\begin{align*}
+\d z_i & = 0 \\
+\d \lambda_i & = - \sum_{jk} \eps_{ijk} z_j \mu_k \\
+\d \mu_i & = 2 z_i \omega .
+\end{align*}
+This is a differential, $\d^2 = 0$, since $\eps_{ijk} z_j z_k = 0$ for any $i=1,2,3$.
+Thus, $(\sfA', \d)$ is a commutative dg algebra.
+Notice that $\d (\sum_i z_i \lambda_i) = 0$ and $\d (\mu_i \mu_j) = \d (\sum_k \eps_{ijk} \lambda_k \omega)$.
+
+We consider the quotient $\sfA$ of the graded algebra $\sfA'$ by the ideal generated by the relations
+\begin{enumerate}
+\item $\sum_i \lambda_i z_i = 1$.
+\item $\sum_i \lambda_i \mu_i = 0$.
+\item $\mu_1 \mu_2 \mu_3 = 0$. 
+\end{enumerate}
+
+\begin{lem}
+The differential preserves the relations (1),(2), and (3).
+Thus, $(\sfA, \d)$ is a commutative dg algebra which is concentrated in degrees zero, one, and two.
+\end{lem}
+\begin{proof}
+The differential preserves (1) since $\sum_{jk} \eps_{ijk} z_j z_k = 0$.
+Now
+\begin{align*}
+\dbar( \sum_i \lambda_i \mu_i ) & = - (\sum_{ijk} \eps_{ijk} z_j \mu_k \mu_i) + 2\sum_i \lambda_i z_i \omega \\
+& = 
+\end{align*} 
+\end{proof}
+
+%\begin{lem}
+%In the graded algebra $\sfA$ one has the relations $\mu_1 \mu_2 \mu_3 = 0$ and 
+%\beqn
+%\sum_{ijk} \eps_{ijk} \mu_i \mu_j z_k = \omega .
+%\eeqn
+%\end{lem}
+%\begin{proof}
+%From relation (3) we have $\mu_1 \mu_2 \mu_3 = \lambda_i \mu_i \omega$ for $i=1,2,3$.
+%Thus using relation (2) we have $3 \mu_1 \mu_2 \mu_3 = \sum_i \lambda_i \mu_i \omega = 0$.
+%Similarly, using (3) we have 
+%\beqn
+%\sum_{ijk} \mu_i \mu_j z_k = \sum_k \lambda_k z_k \omega = \omega .
+%\eeqn
+%\end{proof}
+
+%It follows from this lemma that the graded algebra $\sfA$ is concentrated in degrees $0,1,2$. 
+%Indeed from the above lemma we see
+%\beqn
+%\omega^2 = \left(\sum_{ijk} \eps_{ijk} \mu_i \mu_j z_k \right)^2 = 0
+%\eeqn
+%and
+%\beqn
+%\mu_i \omega = 0.
+%\eeqn
+
+\begin{prop}
+The dg algebra $(\sfA,\d)$ is a dg model for $\R \Gamma(\A^3 - 0, \cO)$.
+\end{prop}
+\begin{proof}
+First we recall a commutative dg model for punctured affine space defined in \cite{FHK}.
+Let $z_i,z_i^*$ be variables of cohomological degree zero and let $z z^* \define \sum_i z_i z_i^*$.
+Let $A_{[3]}^\bu$ be the commutative graded algebra generated over the localized ring
+\beqn
+\C[z_i,z_i^*] [(z z^*)^{-1}]
+\eeqn
+by degree one generators $\d z_i^*$, $i=1,2,3$ subject to the conditions
+\begin{itemize}
+\item[(i)] Give $z^*_i, \d z^*_i$ weight $+1$.
+An element $\alpha \in A_{[3]}$ is required to have total weight zero.
+\item[(ii)] Let $Eu^* = \sum_i z_i^* \del_{z_i^*}$, then an element $\alpha \in A_{[3]}$ is required to satisfy $\iota_{Eu^*} \alpha = 0$.
+\end{itemize}
+Let $\dbar = \sum_i \d z_i^* \del_{z_i^*}$ be the degree one operator acting on $A_{[3]}$.
+Then $\dbar^2 = 0$ and $\sfA_{[3]}$ is a model for $\R \Gamma(\A^3 - 0, \cO)$ by \cite{FHK}.
+
+This model is isomorphic to $\sfA$ by the isomorphism
+\begin{align*}
+\lambda_i & \leftrightarrow z_i^* (zz^*)^{-1} \\
+\mu_i & \leftrightarrow \sum_{jk} \eps_{ijk} (z_j^* \d z_k^*) (z z^*)^{-2}  \\
+\d & \leftrightarrow \dbar .
+\end{align*}
+
+\end{proof}
+
+%\begin{align*}
+%\d (\sum_i \lambda_i \mu_i) & = \sum_{ijk} \left(- \eps_{ijk} z_j \mu_k \mu_i + 2 \lambda_i z_i \omega \right) \\
+%\end{align*}
+
+
+\section{Chiral Liouville theory}
+
+Let $\alpha \in \Omega^{1,\bu}(\C)$ be a spin $1$ field and consider the non-local action
+\beqn
+\int_\C \alpha \dbar \del^{-1} \alpha .
+\eeqn
+
+\section{Free field realization}
+
+Let $\psi^\pm(z)$ be the fields of the free fermion system with OPE
+\beqn
+\psi^+(z) \psi^-(w) \simeq \frac{1}{z-w} .
+\eeqn
+These fields generate a simple vertex algebra that we denote by $F$.
+We will call the vacuum vector $|0\> \in F$.
+
+There is a family of stress tensors
+\beqn
+T^\lambda (z) = (1-\lambda) \colon \del \psi^+(z) \psi^- (z) \colon  + \lambda \colon \del \psi^- (z)\psi^+(z) \colon ,
+\eeqn
+which have central charge
+\beqn
+c_\lambda = - 2 (6 \lambda^2 - 6 \lambda + 1) .
+\eeqn
+
+This free fermion system exhibits the simplest free field realization.
+Define the field
+\beqn
+\alpha(z) \define \colon \psi^+(z) \psi^-(z) \colon 
+\eeqn
+This is a free boson field of level $1$ and $\psi^\pm(z)$ has charge $\pm 1$ with respect to $\alpha(z)$.
+This endows $F$ with the structure of a representation for the Heisenberg, or oscillator, algebra
+\beqn
+0 \to \C K \to \Hat{\lie{s}} \to \C((t)) \to 0
+\eeqn
+where $\alpha_j = t^j$ and the commutation relations are $[\alpha_i, \alpha_j] = i \delta_{i,-j}$.
+Moreover, the stress tensor can be written in terms of this field as
+\beqn
+T_\lambda(z) = \frac12 \colon \alpha(z)^2 \colon + \left(\frac12 - \lambda\right) \del \alpha (z) .
+\eeqn
+
+The operator $\alpha_0$ defines a weight decomposition $F = \oplus_{m \in \Z} F^{(m)}$ where $\alpha_0$ acts on $F^{(m)}$ with eigenvalue $m$.
+For $m > 0$ define the state
+\beqn
+|m\> \define \psi^+_{(-m)} \cdots \psi_{(-2)}^+ \psi_{(-1)}^+ |0\> 
+\eeqn 
+and for $m < 0$ define the state
+\beqn
+|m\> \define \psi^-_{(m)} \cdots \psi_{(-2)}^- \psi_{(-1)}^- |0\>  .
+\eeqn 
+Then $|m\> \in F^{(m)}$.
+Further, these states exhibit the irreducibility of $F^{(m)}$ as a representation for the Heisenberg algebra $\Hat{\lie{s}}$.
+Indeed, if $v \in F^{(m)}$ is any state with the property that $\alpha_j v = 0$ for all $j > 0$ then $v \in \C |m\>$.
+
+
+\section{Lattices}
+The target here is $\R^\ell / Q$.
+
+Let $Q$ be the free abelian group of rank $\ell$ and consider the group algebra $\C[Q]$ with basis $e^{\alpha}, \alpha \in Q$ and multiplication $e^{\alpha} e^{\beta} = e^{\alpha + \beta}$.
+We assume $Q$ is an integral lattice, meaning we have a symmetric bilinear form $(\cdot | \cdot) \colon Q \times Q \to \Z$.
+We assume this bilinear form is non-degenerate.
+
+
+Let $\lie{h} = \C \otimes_\Z Q \cong \C^\ell$ be the complexification of $Q$ and extend $(\cdot|\cdot)$ by linearity.
+Denote by $\Hat{\lie{h}}$ the corresponding affine Heisenberg algebra with central parameter $K$.
+The weight $\mu$ Verma module is
+\beqn
+\til V (\vec{\mu}) = U(\Hat{\lie{h}}) \otimes_{U(\lie{h}[[t]] \oplus \C K)} \C_{\mu, 1}
+\eeqn
+where $\C_{\vec{\mu},1}$ is the one-dimensional module where $t^0$ acts by the vector $\vec{\mu}$ and $K$ acts by $1$.
+As a vector space
+\beqn
+\til V (\vec{\mu}) \simeq S \left(\lie{h}^{<0}\right)
+\eeqn
+where $\lie{h}^{<0} = \oplus_{j < 0} \lie{h} \otimes t^j$.
+Write $S$ for this vector space.
+In the case $\vec{\mu} = 0$, the vacuum module $S$ is equipped with the structure of a vertex algebra.
+
+Let 
+\beqn
+V_Q \define S \otimes \C[Q] .
+\eeqn
+
+\section{Virasoro TFT}
+
+Let $\Sigma$ be a Riemann surface and $S$ a one-dimensional smooth manifold.
+We consider the local Lie algebra
+\beqn
+\Omega^\bu(S) \hotimes \Omega^{0,\bu}(\Sigma, \T_{\Sigma}) 
+\eeqn
+controlling deformations of the THF.
+
+This theory has fields
+\begin{align*}
+\sfc & \in \Omega^\bu(S) \hotimes \Omega^{0,\bu}(\Sigma, \T_\Sigma)[1] \\
+\sfb & \in \Omega^\bu(S) \hotimes \Omega^{0,\bu}(\Sigma, K_\Sigma^{\otimes 2})
+\end{align*}
+where the classical action is 
+\beqn
+\int_{S \times \Sigma} \sfb (\d + \dbar) \sfc + \frac12 \int_{S \times \Sigma} \sfb [\sfc,\sfc] .
+\eeqn
+The central charge should introduce a coupling like
+\beqn
+\int_{S \times \C} J \sfc \del J \sfc .
+\eeqn
+
+I claim that this factorization algebra is locally constant, so on $\R \times \C = \R^3$ we get an $\EE_3$ algebra.
+The complex of local operators is equivalent to
+\beqn
+C^\bu(\lie{vect}(1) \oplus F_{-2}[-1]) \simeq C^\bu(\lie{vect}(1) ; S^\bu \left(F^\vee_{-2}\right))
+\eeqn
+where $F_{-2} = \Gamma(D, K^{\otimes 2})$.
+In other words we have polynomials in $\del^\bu \sfc$ and $\del^\bu \sfb$.
+Since $\sfb$ is spin $2$ the cohomology of this is the same as the cohomology of just the $\sfc$'s:
+\beqn
+H^\bu(\lie{vect}(1)) = \C \oplus \C[-3] .
+\eeqn
+This is hopeful, it's the same as the cohomology of local operators in Chern--Simons theory for $\lie{sl}(2)$.
+
+I think that the $\EE_3$ algebra $C^\bu(\lie{sl}(2))$ underlying Chern--Simons for $\lie{sl}(2)$ is trivializable.
+But it is nontrivial as a filtered $\EE_3$ algebra where the filtration is by symmetric degree.
+Can we identify this filtration in this theory?
+
+
+
+\section{Holomorphic 3d-3d}
+
+Consider compactification of the free tensor multiplet along
+\beqn
+C \times (\C^2 - \{0\})
+\eeqn 
+where $C$ is a Riemann surface.
+Then
+\beqn
+\Omega^{2,\bu}(C \times (\C^2 - \{0\})) \simeq \Omega^{0,\bu}(C) \otimes \Omega^{2,\bu}(\C^2 -\{0\}) \oplus \Omega^{1,\bu}(C) \otimes \Omega^{1,\bu}(\C^2 - \{0\}) .
+\eeqn
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Let 
+\beqn
+\sfR = \C[z_i,\lamba_j,\mu_k]_{i=1,2,3} / (1-z_i \lambda_i, 
+\eeq
+where $z_i, \lambda_j$ have degree zero for $i,j=1,2,3$ and $\mu_k$ is degree one for $k=1,2,3$.
+In particular $z_i \mu_j = \mu_j z_i$ and $\mu_i \mu_j = - \mu_j \mu_i$.
+
+In degree zero we have polynomials in $z_i,\lambda_i$ where we identify polynomials according to the relation $z_i \lambda_i =1$.
