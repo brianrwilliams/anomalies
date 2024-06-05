@@ -165,7 +165,7 @@ So, degree one local cohomology classes for $\cT(\C^n)$ are in one-to-one corres
 
 At this point, we can see how central extensions of the $n$-dimensional Witt algebra appear.
 We have pointed out in \eqref{eqn:localtocompact} how local cohomology classes of a local Lie algebra $\cL$ supported on $U$ determine Lie algebra cohomology classes for the Lie algebra of compactly supported sections $\cL_c(U)$.
-We recall in appendix \cite{appx:model}, the $n$-dimensional Witt algebra $\lie{witt}(n)$ admits a homomorphism of dg Lie algebras
+We showed in appendix \ref{appx:A} that the $n$-dimensional Witt algebra $\lie{witt}(n)$ admits a homomorphism of dg Lie algebras
 \beqn
 j \colon \lie{witt}(n) \hookrightarrow \Omega^{0,\bu} (\C^n - \{0\}, \T) = \cT(\C^n - \{0\}),
 \eeqn
@@ -270,6 +270,27 @@ Then
 H_{loc}^\bu\left(\Omega^\bu_\R \otimes \lie{g}\right)^\R \cong H^{\bu+1}(\lie{g}) .
 \eeqn
 \end{lem}
+\begin{proof}
+Let $E$ be a vector bundle on $\R^n$.
+In \cite[??]{CostelloBook} it is shown that a choice of a flat connection on $E$ produces a quasi- isomorphism 
+\beqn
+\oloc(E)^{\R^n} \simeq \left(\cO(J_0 E) \slash \C\right) \otimes^{\mathbb{L}}_{\R[\del_1,\ldots,\del_n]} |\det|_{\R^n},
+\eeqn
+where $\del_i$ are the coordinate vector fields and $J_0 E$ denotes the fiber of the $\infty$-jet bundle of $E$ at the origin $0 \in \R^n$.
+We apply this to the case that $E[1] = L$ is a local Lie algebra, where we equip local functionals with the Chevalley--Eilenberg differential.
+Then, this result says that
+\beqn
+C^\bu_{loc}(\cL)^{\R^n} \simeq C^\bu_{red}(J_0 L) \otimes^{\mathbb{L}}_{\R[\del_1,\ldots,\del_n]} |\det|_{\R^n} 
+\eeqn
+where $J_0 L$ is the topological Lie algebra obtained by taking the $\infty$-jets of $L$ at $0 \in \R^n$, and is equipped with the bracket obtained by Taylor expanding the bracket on $L$.
+
+We apply this to the case $\cL = \Omega^\bu_\R \otimes \lie{g}$.
+Then, by the formal Poincar\'e lemma
+\beqn
+(J_0 L, \d_{dR}) \simeq \left(\C[[x,\d x]] \otimes \lie{g}, \d_{dR} \otimes \id\right) \simeq \left(\lie{g}, \d = 0\right) .
+\eeqn
+This implies the result.
+\end{proof}
 
 Combining all of these results, we see that the composition
 \beqn
@@ -322,16 +343,18 @@ c_1 \ch_2 \colon (\mu_0,\mu_1,\mu_2) \mapsto \op{Res}_z \op{Tr}(J \mu_0) \op{Tr}
 where the $\cdots$ denote appropriate anti-symmetrization.
 
 \subsection{Enveloping factorization algebras}
+\label{s:enveloping}
 
+We recall the construction of the enveloping factorization algebra from \cite{CG2}.
 Let $\cE$ be a vector bundle on a manifold $M$ and let $\cE_c$ denote its cosheaf of compactly supported sections.
-It is shown how the assignment of the graded vector space
+It is shown in \cite{CG1} how the assignment of the graded vector space
 \beqn
 \Sym \, \cE_c(U) = \oplus_{n \geq 0} \Gamma_c(U, \Sym^n E)
 \eeqn
 to an open set $U \subset M$ assemble into a factorization algebra on $M$.
 
 Now, let $\cL = \Gamma(M,L)$ be a local dg Lie algebra on a manifold $M$.
-Applying the above construction to $E[-1] = L$ gives rise to the factorization algebra which assigns to an open set $U \subset M$ the graded vector space 
+Applying the above construction to $E[-1] = L$ gives rise \cite{CG2} to the factorization algebra which assigns to an open set $U \subset M$ the graded vector space 
 \beqn
 \Sym \, \cL_c (U) [1] .
 \eeqn
@@ -528,6 +551,13 @@ This is the complex resolving the sheaf of closed $(n+1)$-forms placed in cohomo
 
 \section{Free-field factorization algebras}
 
+In this section we introduce the sort of `free' factorization algebras which we will realize symmetries by the higher dimensional Virasoro algebras that we introduced in the last section.
+The contents of this section are only a mild generalization of \cite[\S 8.1]{CG2} which associates a factorization algebra of quantum observables to free quantum field theories.
+In \textit{loc. cit.} the definition of a free quantum field theory requires non-degeneracy of the two-form on the space of fields; in other words, it pertains to the Batalin--Vilkovisky (BV) quantization of a $(-1)$-shifted symplectic space. 
+In this section we weaken non-degeneracy defining the free classical field theoruy; or equivalently, we start with a type of $(-1)$-shifted presymplectic structure.
+Because of the strict assumptions we place on the $(-1)$-shifted presymplectic structure, we can associate to it a $\PP_0$-factorization algebra.
+We then form the BV quantization of the associated $\PP_0$-factorization algebra of classical observables.
+
 \subsection{Weyl factorization algebras}
 \label{ss:weyl}
 
@@ -537,39 +567,25 @@ The non-degeneracy of $\omega$ is not important for this construction, any $\ome
 The Weyl algebra associated to $V$ is the universal enveloping algebra of this central extension where the central parameter is set to the unit.
 In this section we review a factorization algebra enhancement of this construction.
 
-Let $(E,Q)$ be a complex of vector bundles on a manifold $M$ and consider the precosheaf of commutative algebras
+Consider a complex of vector bundles $(\cE,Q)$ on a manifold $M$.
+By applying the construction of the enveloping factorization algebra, recalled in \ref{s:enveloping}, to the abelian local Lie algebra $L = E[-1]$ we obtain the factorization algebra
 \beqn
 \Sym(\cE_c) \colon U \subset M \mapsto \Sym(\cE_c(U)) .
 \eeqn
-If $\sqcup U_i \hookrightarrow V$ is a collection of disjoint open sets embedded inside of another open set then multiplication on this precosheaf determines a morphism
-\beqn\label{eqn:freefactmaps}
-\otimes \Sym(\cE_c(U_i)) \to \Sym(\cE_c(V)) .
-\eeqn
-By \cite[??]{CG1} this endows $\Sym(\cE_c)$ with the structure of a factorization algebra.
-We recalled in section \ref{sec:enveloping} how a deformation of this in the case that $E[-1] = L$ is a local Lie algebra on $M$ gives rise to the enveloping factorization algebra associated to $L$.
-
-A generalization of this construction involves the data of a local functional 
+Now, fix the data of a local functional 
 \beqn
 \omega \in \oloc(E)
 \eeqn
 of cohomological degree $+1$ which satisfies $Q \omega = 0$.
-For each open set $U \subset M$, there is a natural inclusion $\cO_{loc}(E) (U) \hookrightarrow \cO(\cE_c(U))$ so that we can view $\omega$ as a functional
-\beqn
-\omega \colon \Sym(\cE_c(U)) \to \C .
-\eeqn 
-Let $\omega_{[k]}$ be the $k$th homogenous part of $\omega$ so that 
-\beqn
-\omega_{[k]} \colon \Sym^k (\cE_c(U)) \to \C
-\eeqn
-We extend $\omega$ to a map $Q_{\omega_{[k]}} \colon \Sym(\cE_c(U)) \to \Sym(\cE_c(U))[1]$ of cohomological degree one by declaring that for each $k$ $\omega_{[k]}$  \brian{finish} and we let $Q_{\omega} = \sum Q_{\omega_{[k]}}$.
+In other words, this is a local cocycle for the abelian local Lie algebra $L = E[-1]$ of degree $+1$.
+By applying the twisted factorization enveloping algebra construction to this local cocycle, we obtain the following.
 
 \begin{prop}[\cite{CG1}]
-Let $K$ be a parameter of cohomological degree zero.
 The assignment
 \beqn
-\cW_{E,\omega} \colon U \subset M \mapsto \left(\Sym(\cE_c(U))[K], Q + K Q_\omega \right)
+\cW_{E,\omega} \colon U \subset M \mapsto \left(\Sym(\cE_c(U))[K] \,, \, \,Q + K Q_\omega \right)
 \eeqn
-has the structure of a factorization algebra in the category of dg $\C[K]$-modules with structure maps \eqref{eqn:freefactmaps}.
+has the structure of a factorization algebra in the category of dg $\C[K]$-modules, where $K$ is a variable of degree zero.
 We refer to this as the \defterm{Weyl factorization algebra} associated to $E,\omega$.
 \end{prop}
 
@@ -671,7 +687,7 @@ The factorization algebra of classical observables of a free BV theory of Poisso
 
 
 
-\subsection{The higher-dimensional free boson}
+\subsection{The higher-dimensional free chiral boson}
 
 Let $X$ be a $(2n+1)$-dimensional complex manifold and consider the complex of vector bundle $\cA = \cA_X$ from definition \ref{dfn:??}.
 As a graded vector bundle recall that $\cA = \Omega^{\leq n, \bu} [n+1]$.
@@ -699,7 +715,7 @@ by the following rules:
 Let $X$ be a complex manifold of dimension $2n+1$.
 The \defterm{free boson factorization algebra} on $X$ is
 \beqn
-\cF \define \left(\Sym \left(\Omega^{\leq n}_{X,c} [n+1] \right) \; , \; Q + \triangle \right) ,
+\cF \define \left(\Sym \left(\Omega^{\leq n,\bu}_{X,c} [n+1] \right) \; , \; Q + \triangle \right) ,
 \eeqn
 where $\triangle$ is defined as in items (1)-(3) above.
 In the notation of section \ref{ss:weyl}, $\cF = \cW_{\cA,\omega}$.
@@ -863,7 +879,75 @@ T_{\bfa} (X) = \int \alpha \iota_X \alpha + a_1 \int \alpha \op{Tr}(J X \del J X
 
 \appendix
 
-\section{A dg model for the punctured formal disk} \label{appx:A}
+\section{A dg model for punctured affine space} \label{appx:A}
+
+In this appendix we recall a commutative dg model for punctured affine space $\A^n - \{0\}$ defined in \cite{FHK}.
+Let $z_i,z_i^*$, $i=1,\ldots,n$ be variables of cohomological degree zero and let $z z^* \define \sum_{i=1}^n z_i z_i^*$.
+Let $\sfA_{[n]}^\bu$ be the commutative graded algebra generated over the localized ring
+\beqn
+\C[z_i,z_i^*] [(z z^*)^{-1}]
+\eeqn
+by degree one generators $\d z_i^*$, $i=1,\ldots,n$ subject to the conditions
+\begin{itemize}
+\item[(i)] Give $z^*_i, \d z^*_i$ weight $+1$ for $i=1,\ldots,n$.
+An element $\alpha \in \sfA_{[n]}$ is required to have total weight zero.
+\item[(ii)] Let $Eu^* = \sum_i z_i^* \del_{z_i^*}$, then an element $\alpha \in \sfA_{[n]}$ is required to satisfy $\iota_{Eu^*} \alpha = 0$.
+\end{itemize}
+
+Let $\dbar = \sum_i \d z_i^* \del_{z_i^*}$ be the degree one operator acting on $A_{[n]}$.
+Then $\dbar^2 = 0$ and $(\sfA_{[n]},\dbar)$ is a commutative dg algebra.
+
+\begin{thm}[\cite{FHK}]
+The dg algebra $(\sfA_{[n]},\d)$ is a dg model for $\R \Gamma(\A^n - \{0\}, \cO)$.
+\end{thm}
+
+We observe that any element of the form $f(z,z^*) \d^n z^* = f(z,z^*) \d z_1^* \cdots \d z_n^*$ does not satisfy the conditions (i),(ii).
+In particular, we see that $\sfA_{[n]}$ is concentrated in cohomological degrees $0,\ldots,n-1$.
+As a model for punctured affine space, the cohomology of $\sfA$ is concentrated in degrees zero and $n-1$.
+In degree zero the cohomology is simply globally defined algebraic functions on punctured affine space, which by Hartog's theorem is
+\beqn
+H^0(\sfA_{[n]}) = \C[z_1,\ldots,z_n] .
+\eeqn
+Next, define
+\beqn
+\omega_{BM} = \# \sum_{i=1}^n (-1)^{i+1} \frac{z_i^* \d z_1^* \cdots \Hat{\d z_i^*} \cdots \d z_n^* }{(z z^*)^n}
+\eeqn
+be the Bochner--Martenilli kernel.
+One can check that $\omega_{BM}$ is a degree $(n-1)$ element of $\sfA_{[n]}$
+Then a presentation for the degree $(n-1)$ cohomology is 
+\beqn
+H^{n-1}(\sfA_{[n]}) \cong \C[\del_{z_1},\ldots,\del_{z_n}] \omega_{BM} .
+\eeqn
+
+In the main text, we find it convenient to introduce the notation
+\beqn
+\lambda_i \define \frac{\zbar_i}{(zz^*)} .
+\eeqn
+When $n=1$ this is simpy $\lambda = \frac{1}{z}$. 
+
+There is an embedding of commutative dg algebras \cite{FHK}:
+\beqn
+j \colon \sfA \hookrightarrow \Omega^{0,\bu}(\C^n - \{0\})
+\eeqn
+which sends $z_i \mapsto z_i$, $z_i^* \mapsto \zbar_i$, $\d z^*_i \mapsto \d \zbar_i$, which clearly interchanges the algebraic $\dbar$-operator with the usual one.
+This embedding becomes a dense inclusion at the level of cohomology.
+In the main text, we do not distinguish the polynomial variable $z_i^*$ with the anti-holomorphic coordinate $\zbar_i$.
+
+We will utilize a higher residue map.
+Let 
+\beqn
+\op{Res} \left(- \d^n z\right) \colon \sfA \to \C[-n+1]
+\eeqn
+be defined by the projection onto the component of $\omega_{BM} \in \sfA_{[n]}$, which is of degree $n-1$.
+As observed in \cite{FHK}, one has compatibility with usual integration over any $(2n-1)$-sphere centered at the origin as
+\beqn
+\Res_z(\alpha \d^n z) = \oint_{S^{2n-1}} j(\alpha) d^n z ,
+\eeqn
+for $\alpha \in \sfA_{[n]}$.
+
+\subsection{Three-dimensional example}
+In this appendix we unpack the model above in the special case of the three-dimensional punctured affine space to come up with a description via generators and relations.
+
 Let $\sfA'$ be the graded polynomial algebra
 \beqn
 \C[z_i, \lambda_j, \mu_k]
@@ -935,22 +1019,7 @@ Now
 The dg algebra $(\sfA,\d)$ is a dg model for $\R \Gamma(\A^3 - 0, \cO)$.
 \end{prop}
 \begin{proof}
-First we recall a commutative dg model for punctured affine space defined in \cite{FHK}.
-Let $z_i,z_i^*$ be variables of cohomological degree zero and let $z z^* \define \sum_i z_i z_i^*$.
-Let $A_{[3]}^\bu$ be the commutative graded algebra generated over the localized ring
-\beqn
-\C[z_i,z_i^*] [(z z^*)^{-1}]
-\eeqn
-by degree one generators $\d z_i^*$, $i=1,2,3$ subject to the conditions
-\begin{itemize}
-\item[(i)] Give $z^*_i, \d z^*_i$ weight $+1$.
-An element $\alpha \in A_{[3]}$ is required to have total weight zero.
-\item[(ii)] Let $Eu^* = \sum_i z_i^* \del_{z_i^*}$, then an element $\alpha \in A_{[3]}$ is required to satisfy $\iota_{Eu^*} \alpha = 0$.
-\end{itemize}
-Let $\dbar = \sum_i \d z_i^* \del_{z_i^*}$ be the degree one operator acting on $A_{[3]}$.
-Then $\dbar^2 = 0$ and $\sfA_{[3]}$ is a model for $\R \Gamma(\A^3 - 0, \cO)$ by \cite{FHK}.
-
-This model is isomorphic to $\sfA$ by the isomorphism
+This model is isomorphic to $\sfA_{[n]}$ recollected in the previous section by the isomorphism
 \begin{align*}
 \lambda_i & \leftrightarrow z_i^* (zz^*)^{-1} \\
 \mu_i & \leftrightarrow \sum_{jk} \eps_{ijk} (z_j^* \d z_k^*) (z z^*)^{-2}  \\
@@ -958,6 +1027,35 @@ This model is isomorphic to $\sfA$ by the isomorphism
 \end{align*}
 
 \end{proof}
+
+\subsection{dg model for vector fields}
+
+Next we turn to an explicit model for dg model for vector fields on punctured affine space.
+Algebraic sections of the tangent bundle $\T_{\A^n - \{0\}}$ is a sheaf of Lie algebras on punctured affine space and its derived global sections 
+\beqn
+\R \Gamma(\A^n - \{0\}, \T_{\A^n-\{0\}})
+\eeqn
+therefore carry the structure of a Lie algebra, up to homotopy.
+We use the commutative dg algebra model $\sfA_{[n]}$ for punctured affine space recollected above to derive an explicit model for this as a dg Lie algebra.
+
+The choice of a coordinate determines a trivialization of the tangent bundle on $\A^n - \{0\}$.
+In particular
+\beqn
+\R \Gamma(\A^n - \{0\}, \T_{\A^n-\{0\}}) \simeq \R \Gamma(\A^n - \{0\}, \cO_{\A^n - \{0\}}) \otimes \C^n
+\eeqn
+where $\C^n$ is spanned by the vector fields $\frac{\del}{\del z_i}$, $i=1,\ldots,n$.
+
+\begin{dfn}
+The $n$-\defterm{dimensional Witt algebra} $\lie{witt}(n)$ is the dg Lie algebra whose underlying cochain complex is
+\beqn
+\lie{witt}(n) = \sfA_{[n]} \otimes \C^n = \sfA_{[n]} \otimes \C \left\{\frac{\del}{\del z_i}\right\}_{i=1}^n
+\eeqn
+and whose Lie bracket is
+\begin{multline}
+\left[\alpha_{I,i} (z,z^*) \d z^*_I \frac{\del}{\del z_i}, \beta_{J,j} (z,z^*) \d z^*_J \frac{\del}{\del z_j} \right] \\ = \left(\alpha_{I,i}(z,z^*) \frac{\del}{\del z_i} \beta_{J,j}(z,z^*)\frac{\del}{\del z_j} - (-1)^{|I|} \beta_{J,j}(z,z^*) \frac{\del}{\del z_j}\alpha(z,z^*) \frac{\del}{\del z_i}\right) \d z_I^* \d z_J^* .
+\end{multline}
+\end{dfn}
+
 
 %\begin{align*}
 %\d (\sum_i \lambda_i \mu_i) & = \sum_{ijk} \left(- \eps_{ijk} z_j \mu_k \mu_i + 2 \lambda_i z_i \omega \right) \\
@@ -1096,11 +1194,79 @@ Consider compactification of the free tensor multiplet along
 C \times (\C^2 - \{0\})
 \eeqn 
 where $C$ is a Riemann surface.
-Then
+To compactify we replace $\Omega^{0,\bu}(\C^2 - \{0\})$ by
 \beqn
-\Omega^{2,\bu}(C \times (\C^2 - \{0\})) \simeq \Omega^{0,\bu}(C) \otimes \Omega^{2,\bu}(\C^2 -\{0\}) \oplus \Omega^{1,\bu}(C) \otimes \Omega^{1,\bu}(\C^2 - \{0\}) .
+\Omega^{\bu}(\R) \otimes \left(\C[w_1,w_2] \oplus (w_1 w_2)^{-1}\C[w_1^{-1},w_2^{-1}][-1] \right)
+\eeqn
+Also, let $\cA^{i,\bu}(C \times \R)$ denote $\Omega^{i,\bu}(C) \otimes \Omega^\bu(\R)$ for $i=0,1$.
+
+For the tensor, observe
+\beqn
+\Omega^{2,\bu}(C \times (\C^2 - \{0\})) \simeq \Omega^{0,\bu}(C) \otimes \Omega^{2,\bu}(\C^2 -\{0\}) \oplus \Omega^{1,\bu}(C) \otimes \Omega^{1,\bu}(\C^2 - \{0\}) ,
+\eeqn
+and 
+\beqn
+\Omega^{3,\bu}(C \times (\C^2 - \{0\})) \simeq \Omega^{1,\bu}(C) \otimes \Omega^{2,\bu}(\C^2 - \{0\}) .
 \eeqn
 
+So the complex of fields is
+\beqn
+\begin{tikzcd}
+\ul{-1} & \ul{0} & \ul{1} \\
+\cA^{0,\bu} [w_1,w_2] \d^2 w \ar[r,"\del_C"] & \cA^{1,\bu}[w_1,w_2] \d^2 w & \\
+\cA^{1,\bu}[w_1,w_2] \d w_i \ar[ur,"\del_w"] & & \\
+& (w_1w_2)^{-1}\cA^{0,\bu} [w_1^{-1},w_2^{-1}] \d^2 w \ar[r,"\del_C"] & (w_1w_2)^{-1}\cA^{1,\bu}[w_1^{-1},w_2^{-1}] \d^2 w \\
+& (w_1 w_2)^{-1}\cA^{1,\bu}[w_1^{-1},w_2^{-1}] \d w_i \ar[ur,"\del_w"] & 
+\end{tikzcd}
+\eeqn
+
+This looks to be quasi-isomorphic to
+\beqn
+\begin{tikzcd}
+\ul{-1} & \ul{0} & \ul{1} \\
+\cA^{0,\bu} [w_1,w_2] \d^2 w & & \\
+\cA^{1,\bu} \otimes (\C[w_1,w_2] \slash \C) & & \\
+& (w_1w_2)^{-1}\cA^{0,\bu} [w_1^{-1},w_2^{-1}] \d^2 w & \\
+& \cA^{1,\bu} \otimes \left( (w_1 w_2)^{-1} \C[w_1^{-1},w_2^{-1}] / (\C \cdot (w_1 w_2)^{-1}) \right)  & 
+\end{tikzcd}
+\eeqn
+
+The compactification of the hypermultiplet is
+\beqn
+\begin{tikzcd}
+\ul{-2} & \ul{-1} & \ul{0} & \ul{1} \\
+\cA^{0,\bu}[w_1,w_2] &  (w_1w_2)^{-1}\cA^{0,\bu} [w_1^{-1},w_2^{-1}] \\
+& & \cA^{1,\bu}[w_1,w_2] \d^2 w &  (w_1w_2)^{-1}\cA^{1,\bu} [w_1^{-1},w_2^{-1}] \d^2 w .
+\end{tikzcd}
+\eeqn
+
+It appears if we take $\C^\times$-invariants where $w_i$ has weight one, then the only thing that survives is from the hyper part. 
+Namely
+\beqn
+\begin{tikzcd}
+\ul{-2} & \ul{-1} & \ul{0} & \ul{1} \\
+\cA^{0,\bu} &  & & \\
+& & &  (w_1w_2)^{-1}\cA^{1,\bu} \d^2 w .
+\end{tikzcd}
+\eeqn
+If we regrade, then I think we are looking OK; this is level zero limit of $\lie{gl}(1)$ Chern--Simons theory.
+We should see the level from the shifted Poisson structure somehow.
+
+Something is weird with the spin, I think the correct `twist' replaces the hyper above with 
+\begin{align*}
+\gamma & \in \Omega^{1,\bu}(\C) \otimes \Omega^{0,\bu}(\C^2 - \{0\}) \\
+\beta & \in \Omega^{0,\bu}(C) \otimes \Omega^{2,\bu}(\C^2 - \{0\}) .
+\end{align*}
+Then the compactification looks like
+\beqn
+\begin{tikzcd}
+\ul{-2} & \ul{-1} & \ul{0} & \ul{1} \\
+\cA^{0,\bu}[w_1,w_2] \d^2 w &  (w_1w_2)^{-1}\cA^{0,\bu} [w_1^{-1},w_2^{-1}] \d^2 w \\
+& & \cA^{1,\bu}[w_1,w_2] &  (w_1w_2)^{-1}\cA^{1,\bu} [w_1^{-1},w_2^{-1}]  .
+\end{tikzcd}
+\eeqn
+
+Next, we want to understand what happens when we turn on the $\Omega$-background/superconformal deformation.
 
 \end{document}
 
