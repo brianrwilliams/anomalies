@@ -1,0 +1,1255 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Anderson}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=63b311c4c05c0ff7c4800d7df7bcf37f}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Ian\bibnamedelima M.},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Amer. Math. Soc., Providence, RI}%
+      }
+      \strng{namehash}{63b311c4c05c0ff7c4800d7df7bcf37f}
+      \strng{fullhash}{63b311c4c05c0ff7c4800d7df7bcf37f}
+      \strng{bibnamehash}{63b311c4c05c0ff7c4800d7df7bcf37f}
+      \strng{authorbibnamehash}{63b311c4c05c0ff7c4800d7df7bcf37f}
+      \strng{authornamehash}{63b311c4c05c0ff7c4800d7df7bcf37f}
+      \strng{authorfullhash}{63b311c4c05c0ff7c4800d7df7bcf37f}
+      \field{labelalpha}{And92}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Mathematical aspects of classical field theory ({S}eattle, {WA}, 1991)}
+      \field{isbn}{0-8218-5144-6}
+      \field{series}{Contemp. Math.}
+      \field{title}{Introduction to the variational bicomplex}
+      \field{volume}{132}
+      \field{year}{1992}
+      \field{pages}{51\bibrangedash 73}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1090/conm/132/1188434
+      \endverb
+      \verb{urlraw}
+      \verb https://doi-org.ezproxy.bu.edu/10.1090/conm/132/1188434
+      \endverb
+      \verb{url}
+      \verb https://doi-org.ezproxy.bu.edu/10.1090/conm/132/1188434
+      \endverb
+    \endentry
+    \entry{Anselmi:1997ys}{article}{}
+      \name{author}{4}{}{%
+        {{hash=672455eab47c081c0f8cac004ee95f9b}{%
+           family={Anselmi},
+           familyi={A\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6498235abbacc6b5240b6500a9b59443}{%
+           family={Erlich},
+           familyi={E\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=41693ea808f17b7ea6c6c5d4426dcfa3}{%
+           family={Freedman},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi Z.},
+           giveni={D\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=b90e5ff9af851944ef4afa13305bb9e1}{%
+           family={Johansen},
+           familyi={J\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{7681371f47b79a65b5192cea940c0e62}
+      \strng{fullhash}{7681371f47b79a65b5192cea940c0e62}
+      \strng{bibnamehash}{7681371f47b79a65b5192cea940c0e62}
+      \strng{authorbibnamehash}{7681371f47b79a65b5192cea940c0e62}
+      \strng{authornamehash}{7681371f47b79a65b5192cea940c0e62}
+      \strng{authorfullhash}{7681371f47b79a65b5192cea940c0e62}
+      \field{labelalpha}{Ans+98}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1089-4918}
+      \field{journaltitle}{Physical Review D}
+      \field{month}{6}
+      \field{number}{12}
+      \field{title}{Positivity constraints on anomalies in supersymmetric gauge theories}
+      \field{volume}{57}
+      \field{year}{1998}
+      \field{pages}{7570\bibrangedash 7588}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1103/physrevd.57.7570
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1103/PhysRevD.57.7570
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1103/PhysRevD.57.7570
+      \endverb
+    \endentry
+    \entry{Anselmi:1997am}{article}{}
+      \name{author}{4}{}{%
+        {{hash=672455eab47c081c0f8cac004ee95f9b}{%
+           family={Anselmi},
+           familyi={A\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=41693ea808f17b7ea6c6c5d4426dcfa3}{%
+           family={Freedman},
+           familyi={F\bibinitperiod},
+           given={D.Z.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=49314ab2c3fe557ba85c2d36cd96cc8b}{%
+           family={Grisaru},
+           familyi={G\bibinitperiod},
+           given={M.T.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b90e5ff9af851944ef4afa13305bb9e1}{%
+           family={Johansen},
+           familyi={J\bibinitperiod},
+           given={A.A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{4616578804762015ef5d94c80fd0c17b}
+      \strng{fullhash}{4616578804762015ef5d94c80fd0c17b}
+      \strng{bibnamehash}{4616578804762015ef5d94c80fd0c17b}
+      \strng{authorbibnamehash}{4616578804762015ef5d94c80fd0c17b}
+      \strng{authornamehash}{4616578804762015ef5d94c80fd0c17b}
+      \strng{authorfullhash}{4616578804762015ef5d94c80fd0c17b}
+      \field{labelalpha}{Ans+98}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0550-3213}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{month}{8}
+      \field{number}{1–3}
+      \field{title}{Non-perturbative formulas for central functions of supersymmetric gauge theories}
+      \field{volume}{526}
+      \field{year}{1998}
+      \field{pages}{543\bibrangedash 571}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1016/s0550-3213(98)00278-8
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/S0550-3213(98)00278-8
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/S0550-3213(98)00278-8
+      \endverb
+    \endentry
+    \entry{BGWW}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f54c546378c93764901518ad5c018030}{%
+           family={Bomans},
+           familyi={B\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8f1d9d2bc3c8f05f204600add8ff1e98}{%
+           family={Garner},
+           familyi={G\bibinitperiod},
+           given={Niklas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=53fc6589604fdc87b29764d343227f7b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=31075d83acb0cd490e7ab91a51c66d2b}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jingxiang},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc58652a407c802f47628c6bba97473a}
+      \strng{fullhash}{cc58652a407c802f47628c6bba97473a}
+      \strng{bibnamehash}{cc58652a407c802f47628c6bba97473a}
+      \strng{authorbibnamehash}{cc58652a407c802f47628c6bba97473a}
+      \strng{authornamehash}{cc58652a407c802f47628c6bba97473a}
+      \strng{authorfullhash}{cc58652a407c802f47628c6bba97473a}
+      \field{labelalpha}{Bom+25}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{month}{9}
+      \field{title}{{Unravelling the Holomorphic Twist II: Anomalies and Extended Supersymmetry}}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2509.16737
+      \endverb
+    \endentry
+    \entry{Bomans:2023mkd}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f54c546378c93764901518ad5c018030}{%
+           family={Bomans},
+           familyi={B\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=31075d83acb0cd490e7ab91a51c66d2b}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jingxiang},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ccccd8730c11ab85e2d9df07f38a67f8}
+      \strng{fullhash}{ccccd8730c11ab85e2d9df07f38a67f8}
+      \strng{bibnamehash}{ccccd8730c11ab85e2d9df07f38a67f8}
+      \strng{authorbibnamehash}{ccccd8730c11ab85e2d9df07f38a67f8}
+      \strng{authornamehash}{ccccd8730c11ab85e2d9df07f38a67f8}
+      \strng{authorfullhash}{ccccd8730c11ab85e2d9df07f38a67f8}
+      \field{labelalpha}{BW24}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Commun. Math. Phys.}
+      \field{number}{12}
+      \field{title}{{Unravelling the Holomorphic Twist: Central Charges}}
+      \field{volume}{405}
+      \field{year}{2024}
+      \field{pages}{290}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s00220-024-05167-4
+      \endverb
+      \verb{eprint}
+      \verb 2311.04304
+      \endverb
+    \endentry
+    \entry{Cardy:1988cwa}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7b47a8e862c7f8f8def92c33bc992067}{%
+           family={Cardy},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b47a8e862c7f8f8def92c33bc992067}
+      \strng{fullhash}{7b47a8e862c7f8f8def92c33bc992067}
+      \strng{bibnamehash}{7b47a8e862c7f8f8def92c33bc992067}
+      \strng{authorbibnamehash}{7b47a8e862c7f8f8def92c33bc992067}
+      \strng{authornamehash}{7b47a8e862c7f8f8def92c33bc992067}
+      \strng{authorfullhash}{7b47a8e862c7f8f8def92c33bc992067}
+      \field{labelalpha}{Car88}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{{Is There a c Theorem in Four-Dimensions?}}
+      \field{volume}{215}
+      \field{year}{1988}
+      \field{pages}{749\bibrangedash 752}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1016/0370-2693(88)90054-8
+      \endverb
+    \endentry
+    \entry{CostelloBook}{book}{}
+      \name{author}{1}{}{%
+        {{hash=59e3a1bbd35800af2484773194fecb92}{%
+           family={Costello},
+           familyi={C\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{fullhash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{bibnamehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{authorbibnamehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{authornamehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{authorfullhash}{59e3a1bbd35800af2484773194fecb92}
+      \field{extraname}{1}
+      \field{labelalpha}{Cos11}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{170}
+      \field{series}{Mathematical Surveys and Monographs}
+      \field{title}{Renormalization and effective field theory}
+      \field{year}{2011}
+    \endentry
+    \entry{CostelloHol}{article}{}
+      \name{author}{1}{}{%
+        {{hash=59e3a1bbd35800af2484773194fecb92}{%
+           family={Costello},
+           familyi={C\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{fullhash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{bibnamehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{authorbibnamehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{authornamehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{authorfullhash}{59e3a1bbd35800af2484773194fecb92}
+      \field{extraname}{2}
+      \field{labelalpha}{Cos13}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-8599}
+      \field{journaltitle}{Pure and Applied Mathematics Quarterly}
+      \field{number}{1}
+      \field{title}{Notes on supersymmetric and holomorphic field theories in dimensions 2 and 4}
+      \field{volume}{9}
+      \field{year}{2013}
+      \field{pages}{73\bibrangedash 165}
+      \range{pages}{93}
+      \verb{doi}
+      \verb 10.4310/PAMQ.2013.v9.n1.a3
+      \endverb
+    \endentry
+    \entry{CostelloYangian}{article}{}
+      \name{author}{1}{}{%
+        {{hash=59e3a1bbd35800af2484773194fecb92}{%
+           family={Costello},
+           familyi={C\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{fullhash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{bibnamehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{authorbibnamehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{authornamehash}{59e3a1bbd35800af2484773194fecb92}
+      \strng{authorfullhash}{59e3a1bbd35800af2484773194fecb92}
+      \field{extraname}{3}
+      \field{labelalpha}{Cos13}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{title}{{S}upersymmetric gauge theory and the {Y}angian}
+      \field{year}{2013}
+      \verb{eprint}
+      \verb 1303.2632
+      \endverb
+    \endentry
+    \entry{CG1}{book}{}
+      \name{author}{2}{}{%
+        {{hash=59e3a1bbd35800af2484773194fecb92}{%
+           family={Costello},
+           familyi={C\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4fa868ae18a6fdd1e064d305c9c56fe4}{%
+           family={Gwilliam},
+           familyi={G\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{c10fc950640c892e2f46dfc65904ec52}
+      \strng{fullhash}{c10fc950640c892e2f46dfc65904ec52}
+      \strng{bibnamehash}{c10fc950640c892e2f46dfc65904ec52}
+      \strng{authorbibnamehash}{c10fc950640c892e2f46dfc65904ec52}
+      \strng{authornamehash}{c10fc950640c892e2f46dfc65904ec52}
+      \strng{authorfullhash}{c10fc950640c892e2f46dfc65904ec52}
+      \field{extraname}{1}
+      \field{labelalpha}{CG17}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-107-16310-2}
+      \field{number}{31}
+      \field{series}{New Mathematical Monographs}
+      \field{title}{Factorization algebras in quantum field theory}
+      \field{volume}{1}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1017/9781316678626
+      \endverb
+    \endentry
+    \entry{CG2}{book}{}
+      \name{author}{2}{}{%
+        {{hash=59e3a1bbd35800af2484773194fecb92}{%
+           family={Costello},
+           familyi={C\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4fa868ae18a6fdd1e064d305c9c56fe4}{%
+           family={Gwilliam},
+           familyi={G\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{c10fc950640c892e2f46dfc65904ec52}
+      \strng{fullhash}{c10fc950640c892e2f46dfc65904ec52}
+      \strng{bibnamehash}{c10fc950640c892e2f46dfc65904ec52}
+      \strng{authorbibnamehash}{c10fc950640c892e2f46dfc65904ec52}
+      \strng{authornamehash}{c10fc950640c892e2f46dfc65904ec52}
+      \strng{authorfullhash}{c10fc950640c892e2f46dfc65904ec52}
+      \field{extraname}{2}
+      \field{labelalpha}{CG21}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{41}
+      \field{series}{New Mathematical Monographs}
+      \field{title}{Factorization algebras in quantum field theory}
+      \field{volume}{2}
+      \field{year}{2021}
+    \endentry
+    \entry{Deser:1993yx}{article}{}
+      \name{author}{2}{}{%
+        {{hash=47da09412660a63990618911f026f58d}{%
+           family={Deser},
+           familyi={D\bibinitperiod},
+           given={Stanley},
+           giveni={S\bibinitperiod}}}%
+        {{hash=deb63eb9c3e79d0560cbb9039e7a13a4}{%
+           family={Schwimmer},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{78196427b777675396d1c2ed8e0ef1b8}
+      \strng{fullhash}{78196427b777675396d1c2ed8e0ef1b8}
+      \strng{bibnamehash}{78196427b777675396d1c2ed8e0ef1b8}
+      \strng{authorbibnamehash}{78196427b777675396d1c2ed8e0ef1b8}
+      \strng{authornamehash}{78196427b777675396d1c2ed8e0ef1b8}
+      \strng{authorfullhash}{78196427b777675396d1c2ed8e0ef1b8}
+      \field{labelalpha}{DS93}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Lett. B}
+      \field{title}{{Geometric classification of conformal anomalies in arbitrary dimensions}}
+      \field{volume}{309}
+      \field{year}{1993}
+      \field{pages}{279\bibrangedash 284}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/0370-2693(93)90934-A
+      \endverb
+      \verb{eprint}
+      \verb hep-th/9302047
+      \endverb
+    \endentry
+    \entry{Duff}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4d546eea48ef6a3abbd293dd7db15476}{%
+           family={Duff},
+           familyi={D\bibinitperiod},
+           given={M\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{4d546eea48ef6a3abbd293dd7db15476}
+      \strng{fullhash}{4d546eea48ef6a3abbd293dd7db15476}
+      \strng{bibnamehash}{4d546eea48ef6a3abbd293dd7db15476}
+      \strng{authorbibnamehash}{4d546eea48ef6a3abbd293dd7db15476}
+      \strng{authornamehash}{4d546eea48ef6a3abbd293dd7db15476}
+      \strng{authorfullhash}{4d546eea48ef6a3abbd293dd7db15476}
+      \field{labelalpha}{Duf94}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1361-6382}
+      \field{journaltitle}{Classical and Quantum Gravity}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{Twenty years of the Weyl anomaly}
+      \field{volume}{11}
+      \field{year}{1994}
+      \field{pages}{1387\bibrangedash 1403}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1088/0264-9381/11/6/004
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1088/0264-9381/11/6/004
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1088/0264-9381/11/6/004
+      \endverb
+    \endentry
+    \entry{EStwist}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c6f1c1a1c85e3c4b36336c1b6f8f5ac7}{%
+           family={Elliott},
+           familyi={E\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e3bcec76a8572a5743d0f3ca89fc6a2e}{%
+           family={Safronov},
+           familyi={S\bibinitperiod},
+           given={Pavel},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{99d174dffdd5d650e2d84bf80ab62915}
+      \strng{fullhash}{99d174dffdd5d650e2d84bf80ab62915}
+      \strng{bibnamehash}{99d174dffdd5d650e2d84bf80ab62915}
+      \strng{authorbibnamehash}{99d174dffdd5d650e2d84bf80ab62915}
+      \strng{authornamehash}{99d174dffdd5d650e2d84bf80ab62915}
+      \strng{authorfullhash}{99d174dffdd5d650e2d84bf80ab62915}
+      \field{labelalpha}{ES18}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Mathematical Physics}
+      \field{title}{Topological twists of supersymmetric algebras of observables}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 60}
+      \range{pages}{60}
+    \endentry
+    \entry{ESW}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c6f1c1a1c85e3c4b36336c1b6f8f5ac7}{%
+           family={Elliott},
+           familyi={E\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e3bcec76a8572a5743d0f3ca89fc6a2e}{%
+           family={Safronov},
+           familyi={S\bibinitperiod},
+           given={Pavel},
+           giveni={P\bibinitperiod}}}%
+        {{hash=53fc6589604fdc87b29764d343227f7b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{042020858fb051ae808bcd95d0749677}
+      \strng{fullhash}{042020858fb051ae808bcd95d0749677}
+      \strng{bibnamehash}{042020858fb051ae808bcd95d0749677}
+      \strng{authorbibnamehash}{042020858fb051ae808bcd95d0749677}
+      \strng{authornamehash}{042020858fb051ae808bcd95d0749677}
+      \strng{authorfullhash}{042020858fb051ae808bcd95d0749677}
+      \field{labelalpha}{ESW22}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1022-1824,1420-9020}
+      \field{journaltitle}{Selecta Math. (N.S.)}
+      \field{number}{4}
+      \field{title}{A taxonomy of twists of supersymmetric {Y}ang-{M}ills theory}
+      \field{volume}{28}
+      \field{year}{2022}
+      \field{pages}{Paper No. 73\bibrangessep 124}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1007/s00029-022-00786-y
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00029-022-00786-y
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00029-022-00786-y
+      \endverb
+    \endentry
+    \entry{FHK}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d14ce6d582fdd027ef3ea1e056259e87}{%
+           family={Faonte},
+           familyi={F\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=56cb4451fc4984da01903645536709c5}{%
+           family={Hennion},
+           familyi={H\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=72e6505d6f5316f20a2a63cc95f96ae5}{%
+           family={Kapranov},
+           familyi={K\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a16a72a9a182cb67c81d2c1700319c57}
+      \strng{fullhash}{a16a72a9a182cb67c81d2c1700319c57}
+      \strng{bibnamehash}{a16a72a9a182cb67c81d2c1700319c57}
+      \strng{authorbibnamehash}{a16a72a9a182cb67c81d2c1700319c57}
+      \strng{authornamehash}{a16a72a9a182cb67c81d2c1700319c57}
+      \strng{authorfullhash}{a16a72a9a182cb67c81d2c1700319c57}
+      \field{labelalpha}{FHK19}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Mathematics}
+      \field{title}{Higher {Kac--Moody} algebras and moduli spaces of {$G$}-bundles}
+      \field{volume}{346}
+      \field{year}{2019}
+      \field{pages}{389\bibrangedash 466}
+      \range{pages}{78}
+    \endentry
+    \entry{Freed}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ab3089161791979cd27151187854da36}{%
+           family={Freed},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{ab3089161791979cd27151187854da36}
+      \strng{fullhash}{ab3089161791979cd27151187854da36}
+      \strng{bibnamehash}{ab3089161791979cd27151187854da36}
+      \strng{authorbibnamehash}{ab3089161791979cd27151187854da36}
+      \strng{authornamehash}{ab3089161791979cd27151187854da36}
+      \strng{authorfullhash}{ab3089161791979cd27151187854da36}
+      \field{labelalpha}{Fre86}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Conf. Proc. C}
+      \field{title}{{ON DETERMINANT LINE BUNDLES}}
+      \field{volume}{8607214}
+      \field{year}{1986}
+      \field{pages}{189\bibrangedash 238}
+      \range{pages}{50}
+    \endentry
+    \entry{Fuks}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9826061a5b0b36ecdf00bcf73362b7c5}{%
+           family={Fuks},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Consultants Bureau, New York}%
+      }
+      \strng{namehash}{9826061a5b0b36ecdf00bcf73362b7c5}
+      \strng{fullhash}{9826061a5b0b36ecdf00bcf73362b7c5}
+      \strng{bibnamehash}{9826061a5b0b36ecdf00bcf73362b7c5}
+      \strng{authorbibnamehash}{9826061a5b0b36ecdf00bcf73362b7c5}
+      \strng{authornamehash}{9826061a5b0b36ecdf00bcf73362b7c5}
+      \strng{authorfullhash}{9826061a5b0b36ecdf00bcf73362b7c5}
+      \field{labelalpha}{Fuk86}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-306-10990-5}
+      \field{note}{Translated from the Russian by A. B. Sosinski}
+      \field{series}{Contemporary Soviet Mathematics}
+      \field{title}{Cohomology of infinite-dimensional {L}ie algebras}
+      \field{year}{1986}
+      \field{pages}{xii+339}
+      \range{pages}{-1}
+    \endentry
+    \entry{GwilliamThesis}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4fa868ae18a6fdd1e064d305c9c56fe4}{%
+           family={Gwilliam},
+           familyi={G\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{4fa868ae18a6fdd1e064d305c9c56fe4}
+      \strng{fullhash}{4fa868ae18a6fdd1e064d305c9c56fe4}
+      \strng{bibnamehash}{4fa868ae18a6fdd1e064d305c9c56fe4}
+      \strng{authorbibnamehash}{4fa868ae18a6fdd1e064d305c9c56fe4}
+      \strng{authornamehash}{4fa868ae18a6fdd1e064d305c9c56fe4}
+      \strng{authorfullhash}{4fa868ae18a6fdd1e064d305c9c56fe4}
+      \field{labelalpha}{Gwi}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ProQuest LLC, Ann Arbor, MI,.}
+      \field{title}{Factorization Algebras and Free Field Theories}
+      \field{volume}{Thesis (Ph.D.)-Northwestern University}
+    \endentry
+    \entry{GRWthf}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4fa868ae18a6fdd1e064d305c9c56fe4}{%
+           family={Gwilliam},
+           familyi={G\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod}}}%
+        {{hash=fe67be57362f5be5f65b21d18eabe2ee}{%
+           family={Rabinovich},
+           familyi={R\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod}}}%
+        {{hash=53fc6589604fdc87b29764d343227f7b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{433c12708733cd33ed2b00113d7d7349}
+      \strng{fullhash}{433c12708733cd33ed2b00113d7d7349}
+      \strng{bibnamehash}{433c12708733cd33ed2b00113d7d7349}
+      \strng{authorbibnamehash}{433c12708733cd33ed2b00113d7d7349}
+      \strng{authornamehash}{433c12708733cd33ed2b00113d7d7349}
+      \strng{authorfullhash}{433c12708733cd33ed2b00113d7d7349}
+      \field{labelalpha}{GRW24}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1019-8385,1944-9992}
+      \field{journaltitle}{Comm. Anal. Geom.}
+      \field{number}{4}
+      \field{title}{Quantization of topological-holomorphic field theories: local aspects}
+      \field{volume}{32}
+      \field{year}{2024}
+      \field{pages}{1157\bibrangedash 1231}
+      \range{pages}{75}
+      \verb{doi}
+      \verb 10.4310/cag.241015232319
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.4310/cag.241015232319
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.4310/cag.241015232319
+      \endverb
+    \endentry
+    \entry{GWkm}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4fa868ae18a6fdd1e064d305c9c56fe4}{%
+           family={Gwilliam},
+           familyi={G\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod}}}%
+        {{hash=53fc6589604fdc87b29764d343227f7b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{55e2d1021c56fd9531c562712292547b}
+      \strng{fullhash}{55e2d1021c56fd9531c562712292547b}
+      \strng{bibnamehash}{55e2d1021c56fd9531c562712292547b}
+      \strng{authorbibnamehash}{55e2d1021c56fd9531c562712292547b}
+      \strng{authornamehash}{55e2d1021c56fd9531c562712292547b}
+      \strng{authorfullhash}{55e2d1021c56fd9531c562712292547b}
+      \field{labelalpha}{GW21}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1095-0761,1095-0753}
+      \field{journaltitle}{Adv. Theor. Math. Phys.}
+      \field{number}{1}
+      \field{title}{Higher {K}ac-{M}oody algebras and symmetries of holomorphic field theories}
+      \field{volume}{25}
+      \field{year}{2021}
+      \field{pages}{129\bibrangedash 239}
+      \range{pages}{111}
+      \verb{doi}
+      \verb 10.4310/ATMP.2021.v25.n1.a4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.4310/ATMP.2021.v25.n1.a4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.4310/ATMP.2021.v25.n1.a4
+      \endverb
+    \endentry
+    \entry{HRSWconf}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c923919bfb4ba0a0a14d7612c25ba478}{%
+           family={Hahner},
+           familyi={H\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=58224cc9469c2f09cadc659053a66214}{%
+           family={Raghavendran},
+           familyi={R\bibinitperiod},
+           given={Surya},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4e798ec1bcff1a5e5bb709ce63e5f8d8}{%
+           family={Saberi},
+           familyi={S\bibinitperiod},
+           given={Ingmar},
+           giveni={I\bibinitperiod}}}%
+        {{hash=53fc6589604fdc87b29764d343227f7b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{8a7f1329b17d1278bd7a53ba8fc48d45}
+      \strng{fullhash}{8a7f1329b17d1278bd7a53ba8fc48d45}
+      \strng{bibnamehash}{8a7f1329b17d1278bd7a53ba8fc48d45}
+      \strng{authorbibnamehash}{8a7f1329b17d1278bd7a53ba8fc48d45}
+      \strng{authornamehash}{8a7f1329b17d1278bd7a53ba8fc48d45}
+      \strng{authorfullhash}{8a7f1329b17d1278bd7a53ba8fc48d45}
+      \field{labelalpha}{Hah+24}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math-ph}
+      \field{eprinttype}{arXiv}
+      \field{month}{10}
+      \field{title}{{Local superconformal algebras}}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2410.08176
+      \endverb
+    \endentry
+    \entry{HKgf}{article}{}
+      \name{author}{2}{}{%
+        {{hash=56cb4451fc4984da01903645536709c5}{%
+           family={Hennion},
+           familyi={H\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=72e6505d6f5316f20a2a63cc95f96ae5}{%
+           family={Kapranov},
+           familyi={K\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{03282de6a717a7d404a667c6b0a86aff}
+      \strng{fullhash}{03282de6a717a7d404a667c6b0a86aff}
+      \strng{bibnamehash}{03282de6a717a7d404a667c6b0a86aff}
+      \strng{authorbibnamehash}{03282de6a717a7d404a667c6b0a86aff}
+      \strng{authornamehash}{03282de6a717a7d404a667c6b0a86aff}
+      \strng{authorfullhash}{03282de6a717a7d404a667c6b0a86aff}
+      \field{labelalpha}{HK23}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0894-0347,1088-6834}
+      \field{journaltitle}{J. Amer. Math. Soc.}
+      \field{number}{2}
+      \field{title}{Gelfand-{F}uchs cohomology in algebraic geometry and factorization algebras}
+      \field{volume}{36}
+      \field{year}{2023}
+      \field{pages}{311\bibrangedash 396}
+      \range{pages}{86}
+      \verb{doi}
+      \verb 10.1090/jams/1001
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1090/jams/1001
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1090/jams/1001
+      \endverb
+    \endentry
+    \entry{Khoroshkin}{article}{}
+      \name{author}{1}{}{%
+        {{hash=31f547373691a37ab3cda03b1672be63}{%
+           family={Khoroshkin},
+           familyi={K\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{31f547373691a37ab3cda03b1672be63}
+      \strng{fullhash}{31f547373691a37ab3cda03b1672be63}
+      \strng{bibnamehash}{31f547373691a37ab3cda03b1672be63}
+      \strng{authorbibnamehash}{31f547373691a37ab3cda03b1672be63}
+      \strng{authornamehash}{31f547373691a37ab3cda03b1672be63}
+      \strng{authorfullhash}{31f547373691a37ab3cda03b1672be63}
+      \field{labelalpha}{Kho06}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0373-2703}
+      \field{journaltitle}{Zap. Nauchn. Sem. S.-Peterburg. Otdel. Mat. Inst. Steklov. (POMI)}
+      \field{title}{Lie algebra of formal vector fields extended by formal {$g$}-valued functions}
+      \field{volume}{335}
+      \field{year}{2006}
+      \field{pages}{205\bibrangedash 230}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1007/s10958-007-0167-5
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10958-007-0167-5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10958-007-0167-5
+      \endverb
+    \endentry
+    \entry{Komargodski:2011vj}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4c8f3a051d30efe8be66c8ce8b1f5797}{%
+           family={Komargodski},
+           familyi={K\bibinitperiod},
+           given={Zohar},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=8e1f8b435eb95b2aa1b379cdded144b4}{%
+           family={Schwimmer},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b701b7467acf2b0c32311d072407760}
+      \strng{fullhash}{9b701b7467acf2b0c32311d072407760}
+      \strng{bibnamehash}{9b701b7467acf2b0c32311d072407760}
+      \strng{authorbibnamehash}{9b701b7467acf2b0c32311d072407760}
+      \strng{authornamehash}{9b701b7467acf2b0c32311d072407760}
+      \strng{authorfullhash}{9b701b7467acf2b0c32311d072407760}
+      \field{labelalpha}{KS11}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-th}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JHEP}
+      \field{title}{{On Renormalization Group Flows in Four Dimensions}}
+      \field{volume}{12}
+      \field{year}{2011}
+      \field{pages}{099}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/JHEP12(2011)099
+      \endverb
+      \verb{eprint}
+      \verb 1107.3987
+      \endverb
+    \endentry
+    \entry{Quillen}{article}{}
+      \name{author}{1}{}{%
+        {{hash=db1e55f7e8b7aa932623e2b9059a26f2}{%
+           family={Kvillen},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{db1e55f7e8b7aa932623e2b9059a26f2}
+      \strng{fullhash}{db1e55f7e8b7aa932623e2b9059a26f2}
+      \strng{bibnamehash}{db1e55f7e8b7aa932623e2b9059a26f2}
+      \strng{authorbibnamehash}{db1e55f7e8b7aa932623e2b9059a26f2}
+      \strng{authornamehash}{db1e55f7e8b7aa932623e2b9059a26f2}
+      \strng{authorfullhash}{db1e55f7e8b7aa932623e2b9059a26f2}
+      \field{labelalpha}{Kvi85}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0374-1990}
+      \field{journaltitle}{Funktsional. Anal. i Prilozhen.}
+      \field{number}{1}
+      \field{title}{Determinants of {C}auchy-{R}iemann operators on {R}iemann surfaces}
+      \field{volume}{19}
+      \field{year}{1985}
+      \field{pages}{37\bibrangedash 41\bibrangessep 96}
+      \range{pages}{6}
+    \endentry
+    \entry{SWchar}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4e798ec1bcff1a5e5bb709ce63e5f8d8}{%
+           family={Saberi},
+           familyi={S\bibinitperiod},
+           given={Ingmar},
+           giveni={I\bibinitperiod}}}%
+        {{hash=53fc6589604fdc87b29764d343227f7b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b098503aae618b761962ef21167eac6d}
+      \strng{fullhash}{b098503aae618b761962ef21167eac6d}
+      \strng{bibnamehash}{b098503aae618b761962ef21167eac6d}
+      \strng{authorbibnamehash}{b098503aae618b761962ef21167eac6d}
+      \strng{authornamehash}{b098503aae618b761962ef21167eac6d}
+      \strng{authorfullhash}{b098503aae618b761962ef21167eac6d}
+      \field{extraname}{1}
+      \field{labelalpha}{SW20}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0377-9017,1573-0530}
+      \field{journaltitle}{Lett. Math. Phys.}
+      \field{number}{10}
+      \field{title}{Twisted characters and holomorphic symmetries}
+      \field{volume}{110}
+      \field{year}{2020}
+      \field{pages}{2779\bibrangedash 2853}
+      \range{pages}{75}
+      \verb{doi}
+      \verb 10.1007/s11005-020-01319-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11005-020-01319-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11005-020-01319-4
+      \endverb
+    \endentry
+    \entry{SWsuco}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4e798ec1bcff1a5e5bb709ce63e5f8d8}{%
+           family={Saberi},
+           familyi={S\bibinitperiod},
+           given={Ingmar},
+           giveni={I\bibinitperiod}}}%
+        {{hash=53fc6589604fdc87b29764d343227f7b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b098503aae618b761962ef21167eac6d}
+      \strng{fullhash}{b098503aae618b761962ef21167eac6d}
+      \strng{bibnamehash}{b098503aae618b761962ef21167eac6d}
+      \strng{authorbibnamehash}{b098503aae618b761962ef21167eac6d}
+      \strng{authornamehash}{b098503aae618b761962ef21167eac6d}
+      \strng{authorfullhash}{b098503aae618b761962ef21167eac6d}
+      \field{extraname}{2}
+      \field{labelalpha}{SW23}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1424-0637,1424-0661}
+      \field{journaltitle}{Ann. Henri Poincare}
+      \field{number}{2}
+      \field{title}{Superconformal algebras and holomorphic field theories}
+      \field{volume}{24}
+      \field{year}{2023}
+      \field{pages}{541\bibrangedash 604}
+      \range{pages}{64}
+      \verb{doi}
+      \verb 10.1007/s00023-022-01224-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00023-022-01224-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00023-022-01224-7
+      \endverb
+    \endentry
+    \entry{Seiberg}{article}{}
+      \name{author}{1}{}{%
+        {{hash=03b3f2c3e902d517f46079975c454e25}{%
+           family={Seiberg},
+           familyi={S\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{03b3f2c3e902d517f46079975c454e25}
+      \strng{fullhash}{03b3f2c3e902d517f46079975c454e25}
+      \strng{bibnamehash}{03b3f2c3e902d517f46079975c454e25}
+      \strng{authorbibnamehash}{03b3f2c3e902d517f46079975c454e25}
+      \strng{authornamehash}{03b3f2c3e902d517f46079975c454e25}
+      \strng{authorfullhash}{03b3f2c3e902d517f46079975c454e25}
+      \field{labelalpha}{Sei95}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0550-3213}
+      \field{journaltitle}{Nuclear Physics B}
+      \field{month}{2}
+      \field{number}{1–2}
+      \field{title}{Electric-magnetic duality in supersymmetric non-Abelian gauge theories}
+      \field{volume}{435}
+      \field{year}{1995}
+      \field{pages}{129\bibrangedash 146}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/0550-3213(94)00023-8
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/0550-3213(94)00023-8
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/0550-3213(94)00023-8
+      \endverb
+    \endentry
+    \entry{BWhol}{article}{}
+      \name{author}{1}{}{%
+        {{hash=53fc6589604fdc87b29764d343227f7b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{53fc6589604fdc87b29764d343227f7b}
+      \strng{fullhash}{53fc6589604fdc87b29764d343227f7b}
+      \strng{bibnamehash}{53fc6589604fdc87b29764d343227f7b}
+      \strng{authorbibnamehash}{53fc6589604fdc87b29764d343227f7b}
+      \strng{authornamehash}{53fc6589604fdc87b29764d343227f7b}
+      \strng{authorfullhash}{53fc6589604fdc87b29764d343227f7b}
+      \field{extraname}{1}
+      \field{labelalpha}{Wil20}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0010-3616,1432-0916}
+      \field{journaltitle}{Comm. Math. Phys.}
+      \field{number}{3}
+      \field{title}{Renormalization for holomorphic field theories}
+      \field{volume}{374}
+      \field{year}{2020}
+      \field{pages}{1693\bibrangedash 1742}
+      \range{pages}{50}
+      \verb{doi}
+      \verb 10.1007/s00220-020-03693-5
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00220-020-03693-5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00220-020-03693-5
+      \endverb
+    \endentry
+    \entry{BWgf}{article}{}
+      \name{author}{1}{}{%
+        {{hash=53fc6589604fdc87b29764d343227f7b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{53fc6589604fdc87b29764d343227f7b}
+      \strng{fullhash}{53fc6589604fdc87b29764d343227f7b}
+      \strng{bibnamehash}{53fc6589604fdc87b29764d343227f7b}
+      \strng{authorbibnamehash}{53fc6589604fdc87b29764d343227f7b}
+      \strng{authornamehash}{53fc6589604fdc87b29764d343227f7b}
+      \strng{authorfullhash}{53fc6589604fdc87b29764d343227f7b}
+      \field{extraname}{2}
+      \field{labelalpha}{Wil24}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.DG}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{title}{{The local cohomology of vector fields}}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2405.05174
+      \endverb
+    \endentry
+    \entry{WittenTwist}{article}{}
+      \name{author}{1}{}{%
+        {{hash=499139cc4d3fda9ba3955fa766a07270}{%
+           family={Witten},
+           familyi={W\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{499139cc4d3fda9ba3955fa766a07270}
+      \strng{fullhash}{499139cc4d3fda9ba3955fa766a07270}
+      \strng{bibnamehash}{499139cc4d3fda9ba3955fa766a07270}
+      \strng{authorbibnamehash}{499139cc4d3fda9ba3955fa766a07270}
+      \strng{authornamehash}{499139cc4d3fda9ba3955fa766a07270}
+      \strng{authorfullhash}{499139cc4d3fda9ba3955fa766a07270}
+      \field{labelalpha}{Wit88}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0010-3616}
+      \field{journaltitle}{Comm. Math. Phys.}
+      \field{number}{3}
+      \field{title}{Topological quantum field theory}
+      \field{volume}{117}
+      \field{year}{1988}
+      \field{pages}{353\bibrangedash 386}
+      \range{pages}{34}
+    \endentry
+    \entry{Zamolodchikov}{article}{}
+      \name{author}{1}{}{%
+        {{hash=443afdd91bfde2609b826dba175cdc68}{%
+           family={Zamolodchikov},
+           familyi={Z\bibinitperiod},
+           given={A.\bibnamedelimi B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{443afdd91bfde2609b826dba175cdc68}
+      \strng{fullhash}{443afdd91bfde2609b826dba175cdc68}
+      \strng{bibnamehash}{443afdd91bfde2609b826dba175cdc68}
+      \strng{authorbibnamehash}{443afdd91bfde2609b826dba175cdc68}
+      \strng{authornamehash}{443afdd91bfde2609b826dba175cdc68}
+      \strng{authorfullhash}{443afdd91bfde2609b826dba175cdc68}
+      \field{labelalpha}{Zam86}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JETP Lett.}
+      \field{title}{{Irreversibility of the Flux of the Renormalization Group in a 2D Field Theory}}
+      \field{volume}{43}
+      \field{year}{1986}
+      \field{pages}{730\bibrangedash 732}
+      \range{pages}{3}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

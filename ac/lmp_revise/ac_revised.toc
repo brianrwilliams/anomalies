@@ -1,0 +1,29 @@
+\contentsline {subsection}{\tocsubsection {}{}{Acknowledgements}}{3}{section*.1}%
+\contentsline {section}{\tocsection {}{1}{A local model for holomorphic vector fields}}{5}{section.1}%
+\contentsline {section}{\tocsection {}{2}{Anomalies and descent}}{6}{section.2}%
+\contentsline {subsection}{\tocsubsection {}{2.1}{Anomalies as local functionals}}{6}{subsection.2.1}%
+\contentsline {subsection}{\tocsubsection {}{2.2}{Central charges}}{10}{subsection.2.2}%
+\contentsline {subsection}{\tocsubsection {}{2.3}{Diffeomorphism anomalies and Gelfand--Fuks cohomology}}{12}{subsection.2.3}%
+\contentsline {subsection}{\tocsubsection {}{2.4}{The holomorphic $a,c$ anomalies}}{13}{subsection.2.4}%
+\contentsline {subsection}{\tocsubsection {}{2.5}{Mixed anomalies}}{16}{subsection.2.5}%
+\contentsline {section}{\tocsection {}{3}{Holomorphic theories and their quantum anomalies}}{18}{section.3}%
+\contentsline {subsection}{\tocsubsection {}{3.1}{A local index theorem from free field theory}}{18}{subsection.3.1}%
+\contentsline {subsection}{\tocsubsection {}{3.2}{Riemann--Roch theorem and anomalies}}{20}{subsection.3.2}%
+\contentsline {subsection}{\tocsubsection {}{3.3}{Computing the anomaly using the holomorphic gauge}}{23}{subsection.3.3}%
+\contentsline {subsection}{\tocsubsection {}{3.4}{Symplectic vector fields}}{24}{subsection.3.4}%
+\contentsline {subsection}{\tocsubsection {}{3.5}{Riemann--Roch theorem for mixed anomalies}}{25}{subsection.3.5}%
+\contentsline {subsection}{\tocsubsection {}{3.6}{Holomorphic gauge theories}}{27}{subsection.3.6}%
+\contentsline {subsection}{\tocsubsection {}{3.7}{Compactification}}{30}{subsection.3.7}%
+\contentsline {section}{\tocsection {}{4}{Relationship to the $a,c$ anomalies}}{31}{section.4}%
+\contentsline {subsection}{\tocsubsection {}{4.1}{$R$-symmetry and twisting data}}{32}{subsection.4.1}%
+\contentsline {subsection}{\tocsubsection {}{4.2}{Anomalies for basic supersymmetric theories}}{35}{subsection.4.2}%
+\contentsline {subsubsection}{\tocsubsubsection {}{4.2.1}{$\EuScript N=1$ gauge theory}}{35}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\tocsubsubsection {}{4.2.2}{$\EuScript N=2$ gauge theory}}{35}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\tocsubsubsection {}{4.2.3}{$\EuScript N=4$ gauge theory}}{36}{subsubsection.4.2.3}%
+\contentsline {section}{\tocsection {}{5}{Anomaly matching in holomorphic QCD}}{37}{section.5}%
+\contentsline {subsection}{\tocsubsection {}{5.1}{The holomorphic theory}}{37}{subsection.5.1}%
+\contentsline {subsection}{\tocsubsection {}{5.2}{There are no gauge anomalies}}{39}{subsection.5.2}%
+\contentsline {subsection}{\tocsubsection {}{5.3}{Anomaly to a quantum $\EuScript T$-background}}{39}{subsection.5.3}%
+\contentsline {subsection}{\tocsubsection {}{5.4}{$a,c$ for QCD}}{40}{subsection.5.4}%
+\contentsline {subsection}{\tocsubsection {}{5.5}{Magnetic anomalies}}{41}{subsection.5.5}%
+\contentsline {section}{\tocsection {}{}{References}}{42}{section*.3}%
